@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="../AcademyJornal.Data/AcademyJornal.Data.csproj" Id="8239311c-c227-4cea-9988-b6a0b3e92b3f" />
+  <Project Path="../AcademyJornal.Tests/AcademyJornal.Tests.csproj" Id="f7d7558b-83a1-48be-8cfd-8dd03d25772f" />
+  <Project Path="../AcademyJournal.Core/AcademyJournal.Core.csproj" Id="df258b90-783b-4e33-9cfd-bf3eeafbc7e0" />
+  <Project Path="AcademyJornal.UI.csproj" />
+</Solution>
