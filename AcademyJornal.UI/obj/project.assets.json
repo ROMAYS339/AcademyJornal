@@ -3449,23 +3449,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\admin\\.nuget\\packages\\": {},
+    "C:\\Users\\Вова\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\admin\\source\\repos\\AcademyJornal\\AcademyJornal.UI\\AcademyJornal.UI.csproj",
+      "projectUniqueName": "G:\\ITtop\\Тестирование\\ProjectFixedFirst\\AcademyJornal\\AcademyJornal.UI\\AcademyJornal.UI.csproj",
       "projectName": "AcademyJornal.UI",
-      "projectPath": "C:\\Users\\admin\\source\\repos\\AcademyJornal\\AcademyJornal.UI\\AcademyJornal.UI.csproj",
-      "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\admin\\source\\repos\\AcademyJornal\\AcademyJornal.UI\\obj\\",
+      "projectPath": "G:\\ITtop\\Тестирование\\ProjectFixedFirst\\AcademyJornal\\AcademyJornal.UI\\AcademyJornal.UI.csproj",
+      "packagesPath": "C:\\Users\\Вова\\.nuget\\packages\\",
+      "outputPath": "G:\\ITtop\\Тестирование\\ProjectFixedFirst\\AcademyJornal\\AcademyJornal.UI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Вова\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -3481,8 +3481,8 @@
         "net10.0-windows7.0": {
           "targetAlias": "net10.0-windows",
           "projectReferences": {
-            "C:\\Users\\admin\\source\\repos\\AcademyJornal\\AcademyJornal.Data\\AcademyJornal.Data.csproj": {
-              "projectPath": "C:\\Users\\admin\\source\\repos\\AcademyJornal\\AcademyJornal.Data\\AcademyJornal.Data.csproj"
+            "G:\\ITtop\\Тестирование\\ProjectFixedFirst\\AcademyJornal\\AcademyJornal.Data\\AcademyJornal.Data.csproj": {
+              "projectPath": "G:\\ITtop\\Тестирование\\ProjectFixedFirst\\AcademyJornal\\AcademyJornal.Data\\AcademyJornal.Data.csproj"
             }
           }
         }
