@@ -2,4 +2,16 @@
 # Данный GITIGNORE-файл был автоматически создан Microsoft(R) Visual Studio.
 ################################################################################
 
+# Папки сборки .NET
+**/bin/
+**/obj/
+
+# Настройки Visual Studio
 .vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Кэш инструментов
+*.nuget.cache
