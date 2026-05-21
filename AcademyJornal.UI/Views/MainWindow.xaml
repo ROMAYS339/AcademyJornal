@@ -5,8 +5,65 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:AcademyJornal.UI"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="800"  MinHeight="600" MinWidth="900"
+        WindowStartupLocation="CenterScreen"
+        Background="{DynamicResource BackgroundBrush}">
+
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="210"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Border Grid.Column="0"
+                Background="{DynamicResource SurfaceBrush}"
+                BorderBrush="{DynamicResource BorderBrush}"
+                BorderThickness="0,0,1,0">
+            <DockPanel>
+                <!-- Логотип -->
+                <StackPanel DockPanel.Dock="Top" Margin="16,20,16,16">
+                    <TextBlock Text="🎓 AcademyJornal"
+                               FontSize="16" FontWeight="Bold"
+                               Foreground="{DynamicResource AccentPurpleLightBrush}"/>
+                    <TextBlock Text="Журнал преподавателя"
+                               FontSize="11"
+                               Foreground="{DynamicResource TextSecondaryBrush}"
+                               Margin="0,2,0,0"/>
+                </StackPanel>
+
+                <Button DockPanel.Dock="Bottom"
+                        x:Name="BtnToggleTheme"
+                        Content="☀️ / 🌙  Сменить тему"
+                        Style="{DynamicResource SecondaryButton}"
+                        Margin="12,8" Click="BtnToggleTheme_Click"/>
+
+                <StackPanel Margin="8,0">
+                    <RadioButton x:Name="NavDashboard"
+                                 Content="📊  Главная"
+                                 Style="{DynamicResource NavButton}"
+                                 GroupName="Nav" IsChecked="True"
+                                 Checked="Nav_Checked" Tag="Dashboard"/>
+                    <RadioButton x:Name="NavGrades"
+                                 Content="📝  Оценки и парсинг"
+                                 Style="{DynamicResource NavButton}"
+                                 GroupName="Nav"
+                                 Checked="Nav_Checked" Tag="Grades"/>
+                    <RadioButton x:Name="NavMaterials"
+                                 Content="📁  Материалы"
+                                 Style="{DynamicResource NavButton}"
+                                 GroupName="Nav"
+                                 Checked="Nav_Checked" Tag="Materials"/>
+                    <RadioButton x:Name="NavReviews"
+                                 Content="💬  Отзывы"
+                                 Style="{DynamicResource NavButton}"
+                                 GroupName="Nav"
+                                 Checked="Nav_Checked" Tag="Reviews"/>
+                </StackPanel>
+            </DockPanel>
+        </Border>
+
+        <Frame Grid.Column="1" x:Name="MainContent"/>
+
 
     </Grid>
 </Window>
