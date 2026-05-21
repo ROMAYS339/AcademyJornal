@@ -1,61 +1,76 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\\u0421# \u041F\u0420\u041E\u0415\u041A\u0422\u042B\\AcademyJornal\\AcademyJornal.UI\\",
+  "WorkspaceRootPath": "C:\\Users\\admin\\source\\repos\\AcademyJornal\\AcademyJornal.UI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F7D7558B-83A1-48BE-8CFD-8DD03D25772F}|..\\AcademyJornal.Tests\\AcademyJornal.Tests.csproj|c:\\\u0441# \u043F\u0440\u043E\u0435\u043A\u0442\u044B\\academyjornal\\academyjornal.tests\\services\\gradecalculatorservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F7D7558B-83A1-48BE-8CFD-8DD03D25772F}|..\\AcademyJornal.Tests\\AcademyJornal.Tests.csproj|c:\\\u0441# \u043F\u0440\u043E\u0435\u043A\u0442\u044B\\academyjornal\\academyjornal.tests\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3FBCB8F8-8A5B-5D58-4B22-A9108D2D183D}|AcademyJornal.UI.csproj|c:\\\u0441# \u043F\u0440\u043E\u0435\u043A\u0442\u044B\\academyjornal\\academyjornal.ui\\themes\\lighttheme.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{3FBCB8F8-8A5B-5D58-4B22-A9108D2D183D}|AcademyJornal.UI.csproj|solutionrelative:themes\\lighttheme.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3FBCB8F8-8A5B-5D58-4B22-A9108D2D183D}|AcademyJornal.UI.csproj|c:\\\u0441# \u043F\u0440\u043E\u0435\u043A\u0442\u044B\\academyjornal\\academyjornal.ui\\themes\\darktheme.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{3FBCB8F8-8A5B-5D58-4B22-A9108D2D183D}|AcademyJornal.UI.csproj|c:\\users\\admin\\source\\repos\\academyjornal\\academyjornal.ui\\themes\\darktheme.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{3FBCB8F8-8A5B-5D58-4B22-A9108D2D183D}|AcademyJornal.UI.csproj|solutionrelative:themes\\darktheme.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3FBCB8F8-8A5B-5D58-4B22-A9108D2D183D}|AcademyJornal.UI.csproj|c:\\\u0441# \u043F\u0440\u043E\u0435\u043A\u0442\u044B\\academyjornal\\academyjornal.ui\\views\\materialsview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{3FBCB8F8-8A5B-5D58-4B22-A9108D2D183D}|AcademyJornal.UI.csproj|solutionrelative:views\\materialsview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{3FBCB8F8-8A5B-5D58-4B22-A9108D2D183D}|AcademyJornal.UI.csproj|c:\\users\\admin\\source\\repos\\academyjornal\\academyjornal.ui\\themes\\lighttheme.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{3FBCB8F8-8A5B-5D58-4B22-A9108D2D183D}|AcademyJornal.UI.csproj|solutionrelative:themes\\lighttheme.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3FBCB8F8-8A5B-5D58-4B22-A9108D2D183D}|AcademyJornal.UI.csproj|c:\\\u0441# \u043F\u0440\u043E\u0435\u043A\u0442\u044B\\academyjornal\\academyjornal.ui\\views\\gradesinputview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{3FBCB8F8-8A5B-5D58-4B22-A9108D2D183D}|AcademyJornal.UI.csproj|solutionrelative:views\\gradesinputview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{3FBCB8F8-8A5B-5D58-4B22-A9108D2D183D}|AcademyJornal.UI.csproj|c:\\users\\admin\\source\\repos\\academyjornal\\academyjornal.ui\\views\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3FBCB8F8-8A5B-5D58-4B22-A9108D2D183D}|AcademyJornal.UI.csproj|solutionrelative:views\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3FBCB8F8-8A5B-5D58-4B22-A9108D2D183D}|AcademyJornal.UI.csproj|c:\\\u0441# \u043F\u0440\u043E\u0435\u043A\u0442\u044B\\academyjornal\\academyjornal.ui\\views\\dashboardview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{3FBCB8F8-8A5B-5D58-4B22-A9108D2D183D}|AcademyJornal.UI.csproj|solutionrelative:views\\dashboardview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8239311C-C227-4CEA-9988-B6A0B3E92B3F}|..\\AcademyJornal.Data\\AcademyJornal.Data.csproj|c:\\\u0441# \u043F\u0440\u043E\u0435\u043A\u0442\u044B\\academyjornal\\academyjornal.data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8239311C-C227-4CEA-9988-B6A0B3E92B3F}|..\\AcademyJornal.Data\\AcademyJornal.Data.csproj|c:\\\u0441# \u043F\u0440\u043E\u0435\u043A\u0442\u044B\\academyjornal\\academyjornal.data\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DF258B90-783B-4E33-9CFD-BF3EEAFBC7E0}|..\\AcademyJournal.Core\\AcademyJournal.Core.csproj|c:\\\u0441# \u043F\u0440\u043E\u0435\u043A\u0442\u044B\\academyjornal\\academyjournal.core\\services\\reviewgeneratorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DF258B90-783B-4E33-9CFD-BF3EEAFBC7E0}|..\\AcademyJournal.Core\\AcademyJournal.Core.csproj|c:\\\u0441# \u043F\u0440\u043E\u0435\u043A\u0442\u044B\\academyjornal\\academyjournal.core\\services\\gradecalculatorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DF258B90-783B-4E33-9CFD-BF3EEAFBC7E0}|..\\AcademyJournal.Core\\AcademyJournal.Core.csproj|c:\\\u0441# \u043F\u0440\u043E\u0435\u043A\u0442\u044B\\academyjornal\\academyjournal.core\\models\\grade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DF258B90-783B-4E33-9CFD-BF3EEAFBC7E0}|..\\AcademyJournal.Core\\AcademyJournal.Core.csproj|c:\\\u0441# \u043F\u0440\u043E\u0435\u043A\u0442\u044B\\academyjornal\\academyjournal.core\\models\\module.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DF258B90-783B-4E33-9CFD-BF3EEAFBC7E0}|..\\AcademyJournal.Core\\AcademyJournal.Core.csproj|c:\\\u0441# \u043F\u0440\u043E\u0435\u043A\u0442\u044B\\academyjornal\\academyjournal.core\\models\\students.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3FBCB8F8-8A5B-5D58-4B22-A9108D2D183D}|AcademyJornal.UI.csproj|c:\\\u0441# \u043F\u0440\u043E\u0435\u043A\u0442\u044B\\academyjornal\\academyjornal.ui\\views\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{3FBCB8F8-8A5B-5D58-4B22-A9108D2D183D}|AcademyJornal.UI.csproj|c:\\users\\admin\\source\\repos\\academyjornal\\academyjornal.ui\\views\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{3FBCB8F8-8A5B-5D58-4B22-A9108D2D183D}|AcademyJornal.UI.csproj|solutionrelative:views\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3FBCB8F8-8A5B-5D58-4B22-A9108D2D183D}|AcademyJornal.UI.csproj|c:\\\u0441# \u043F\u0440\u043E\u0435\u043A\u0442\u044B\\academyjornal\\academyjornal.ui\\views\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3FBCB8F8-8A5B-5D58-4B22-A9108D2D183D}|AcademyJornal.UI.csproj|solutionrelative:views\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3FBCB8F8-8A5B-5D58-4B22-A9108D2D183D}|AcademyJornal.UI.csproj|c:\\users\\admin\\source\\repos\\academyjornal\\academyjornal.ui\\views\\dashboardview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{3FBCB8F8-8A5B-5D58-4B22-A9108D2D183D}|AcademyJornal.UI.csproj|solutionrelative:views\\dashboardview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3FBCB8F8-8A5B-5D58-4B22-A9108D2D183D}|AcademyJornal.UI.csproj|c:\\users\\admin\\source\\repos\\academyjornal\\academyjornal.ui\\views\\gradesinputview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{3FBCB8F8-8A5B-5D58-4B22-A9108D2D183D}|AcademyJornal.UI.csproj|solutionrelative:views\\gradesinputview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3FBCB8F8-8A5B-5D58-4B22-A9108D2D183D}|AcademyJornal.UI.csproj|c:\\users\\admin\\source\\repos\\academyjornal\\academyjornal.ui\\views\\reviewsview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{3FBCB8F8-8A5B-5D58-4B22-A9108D2D183D}|AcademyJornal.UI.csproj|solutionrelative:views\\reviewsview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3FBCB8F8-8A5B-5D58-4B22-A9108D2D183D}|AcademyJornal.UI.csproj|c:\\users\\admin\\source\\repos\\academyjornal\\academyjornal.ui\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{3FBCB8F8-8A5B-5D58-4B22-A9108D2D183D}|AcademyJornal.UI.csproj|solutionrelative:app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3FBCB8F8-8A5B-5D58-4B22-A9108D2D183D}|AcademyJornal.UI.csproj|c:\\users\\admin\\source\\repos\\academyjornal\\academyjornal.ui\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3FBCB8F8-8A5B-5D58-4B22-A9108D2D183D}|AcademyJornal.UI.csproj|solutionrelative:app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3FBCB8F8-8A5B-5D58-4B22-A9108D2D183D}|AcademyJornal.UI.csproj|c:\\users\\admin\\source\\repos\\academyjornal\\academyjornal.ui\\views\\materialsview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{3FBCB8F8-8A5B-5D58-4B22-A9108D2D183D}|AcademyJornal.UI.csproj|solutionrelative:views\\materialsview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\\u0421# \u041F\u0420\u041E\u0415\u041A\u0422\u042B\\AcademyJornal\\AcademyJornal.Tests\\Services\\GradeCalculatorServiceTests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\\u0421# \u041F\u0420\u041E\u0415\u041A\u0422\u042B\\AcademyJornal\\AcademyJornal.Tests\\UnitTest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\\u0421# \u041F\u0420\u041E\u0415\u041A\u0422\u042B\\AcademyJornal\\AcademyJornal.Data\\AppDbContext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\\u0421# \u041F\u0420\u041E\u0415\u041A\u0422\u042B\\AcademyJornal\\AcademyJornal.Data\\Class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\\u0421# \u041F\u0420\u041E\u0415\u041A\u0422\u042B\\AcademyJornal\\AcademyJournal.Core\\Services\\ReviewGeneratorService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\\u0421# \u041F\u0420\u041E\u0415\u041A\u0422\u042B\\AcademyJornal\\AcademyJournal.Core\\Services\\GradeCalculatorService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\\u0421# \u041F\u0420\u041E\u0415\u041A\u0422\u042B\\AcademyJornal\\AcademyJournal.Core\\Models\\Grade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\\u0421# \u041F\u0420\u041E\u0415\u041A\u0422\u042B\\AcademyJornal\\AcademyJournal.Core\\Models\\Module.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\\u0421# \u041F\u0420\u041E\u0415\u041A\u0422\u042B\\AcademyJornal\\AcademyJournal.Core\\Models\\Students.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -64,7 +79,7 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedHeight": 219,
+          "DockedHeight": 408,
           "SelectedChildIndex": 4,
           "Children": [
             {
@@ -80,90 +95,74 @@
               "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "GradeCalculatorServiceTests.cs",
-              "DocumentMoniker": "C:\\\u0421# \u041F\u0420\u041E\u0415\u041A\u0422\u042B\\AcademyJornal\\AcademyJornal.Tests\\Services\\GradeCalculatorServiceTests.cs",
-              "RelativeDocumentMoniker": "..\\AcademyJornal.Tests\\Services\\GradeCalculatorServiceTests.cs",
-              "ToolTip": "C:\\\u0421# \u041F\u0420\u041E\u0415\u041A\u0422\u042B\\AcademyJornal\\AcademyJornal.Tests\\Services\\GradeCalculatorServiceTests.cs",
-              "RelativeToolTip": "..\\AcademyJornal.Tests\\Services\\GradeCalculatorServiceTests.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-18T11:43:09.777Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "UnitTest1.cs",
-              "DocumentMoniker": "C:\\\u0421# \u041F\u0420\u041E\u0415\u041A\u0422\u042B\\AcademyJornal\\AcademyJornal.Tests\\UnitTest1.cs",
-              "RelativeDocumentMoniker": "..\\AcademyJornal.Tests\\UnitTest1.cs",
-              "ToolTip": "C:\\\u0421# \u041F\u0420\u041E\u0415\u041A\u0422\u042B\\AcademyJornal\\AcademyJornal.Tests\\UnitTest1.cs",
-              "RelativeToolTip": "..\\AcademyJornal.Tests\\UnitTest1.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-18T11:42:14.608Z",
-              "EditorCaption": ""
-            },
-            {
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "LightTheme.xaml",
-              "DocumentMoniker": "C:\\\u0421# \u041F\u0420\u041E\u0415\u041A\u0422\u042B\\AcademyJornal\\AcademyJornal.UI\\Themes\\LightTheme.xaml",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\AcademyJornal\\AcademyJornal.UI\\Themes\\LightTheme.xaml",
               "RelativeDocumentMoniker": "Themes\\LightTheme.xaml",
-              "ToolTip": "C:\\\u0421# \u041F\u0420\u041E\u0415\u041A\u0422\u042B\\AcademyJornal\\AcademyJornal.UI\\Themes\\LightTheme.xaml",
-              "RelativeToolTip": "Themes\\LightTheme.xaml",
+              "ToolTip": "C:\\Users\\admin\\source\\repos\\AcademyJornal\\AcademyJornal.UI\\Themes\\LightTheme.xaml*",
+              "RelativeToolTip": "Themes\\LightTheme.xaml*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2026-05-18T11:41:46.378Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Microsoft.Common.CurrentVersion.targets",
+              "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\18\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "ToolTip": "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\18\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "ViewState": "AgIAAAAVAAAAAAAAAAAgwBcVAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
+              "WhenOpened": "2026-05-21T11:06:39.748Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\AcademyJornal\\AcademyJornal.UI\\Views\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "Views\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\admin\\source\\repos\\AcademyJornal\\AcademyJornal.UI\\Views\\MainWindow.xaml.cs",
+              "RelativeToolTip": "Views\\MainWindow.xaml.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAADIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-18T10:20:20.46Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "DarkTheme.xaml",
-              "DocumentMoniker": "C:\\\u0421# \u041F\u0420\u041E\u0415\u041A\u0422\u042B\\AcademyJornal\\AcademyJornal.UI\\Themes\\DarkTheme.xaml",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\AcademyJornal\\AcademyJornal.UI\\Themes\\DarkTheme.xaml",
               "RelativeDocumentMoniker": "Themes\\DarkTheme.xaml",
-              "ToolTip": "C:\\\u0421# \u041F\u0420\u041E\u0415\u041A\u0422\u042B\\AcademyJornal\\AcademyJornal.UI\\Themes\\DarkTheme.xaml",
-              "RelativeToolTip": "Themes\\DarkTheme.xaml",
+              "ToolTip": "C:\\Users\\admin\\source\\repos\\AcademyJornal\\AcademyJornal.UI\\Themes\\DarkTheme.xaml*",
+              "RelativeToolTip": "Themes\\DarkTheme.xaml*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-05-18T11:41:32.54Z",
+              "WhenOpened": "2026-05-21T10:13:34.279Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "MaterialsView.xaml",
-              "DocumentMoniker": "C:\\\u0421# \u041F\u0420\u041E\u0415\u041A\u0422\u042B\\AcademyJornal\\AcademyJornal.UI\\Views\\MaterialsView.xaml",
-              "RelativeDocumentMoniker": "Views\\MaterialsView.xaml",
-              "ToolTip": "C:\\\u0421# \u041F\u0420\u041E\u0415\u041A\u0422\u042B\\AcademyJornal\\AcademyJornal.UI\\Views\\MaterialsView.xaml",
-              "RelativeToolTip": "Views\\MaterialsView.xaml",
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\AcademyJornal\\AcademyJornal.UI\\Views\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "Views\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\admin\\source\\repos\\AcademyJornal\\AcademyJornal.UI\\Views\\MainWindow.xaml*",
+              "RelativeToolTip": "Views\\MainWindow.xaml*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-05-18T11:40:11.058Z",
+              "WhenOpened": "2026-05-18T10:20:21.043Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "GradesInputView.xaml",
-              "DocumentMoniker": "C:\\\u0421# \u041F\u0420\u041E\u0415\u041A\u0422\u042B\\AcademyJornal\\AcademyJornal.UI\\Views\\GradesInputView.xaml",
-              "RelativeDocumentMoniker": "Views\\GradesInputView.xaml",
-              "ToolTip": "C:\\\u0421# \u041F\u0420\u041E\u0415\u041A\u0422\u042B\\AcademyJornal\\AcademyJornal.UI\\Views\\GradesInputView.xaml",
-              "RelativeToolTip": "Views\\GradesInputView.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-05-18T11:39:32.693Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
               "Title": "DashboardView.xaml",
-              "DocumentMoniker": "C:\\\u0421# \u041F\u0420\u041E\u0415\u041A\u0422\u042B\\AcademyJornal\\AcademyJornal.UI\\Views\\DashboardView.xaml",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\AcademyJornal\\AcademyJornal.UI\\Views\\DashboardView.xaml",
               "RelativeDocumentMoniker": "Views\\DashboardView.xaml",
-              "ToolTip": "C:\\\u0421# \u041F\u0420\u041E\u0415\u041A\u0422\u042B\\AcademyJornal\\AcademyJornal.UI\\Views\\DashboardView.xaml",
+              "ToolTip": "C:\\Users\\admin\\source\\repos\\AcademyJornal\\AcademyJornal.UI\\Views\\DashboardView.xaml",
               "RelativeToolTip": "Views\\DashboardView.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2026-05-18T11:39:04.87Z",
@@ -171,124 +170,176 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "GradesInputView.xaml",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\AcademyJornal\\AcademyJornal.UI\\Views\\GradesInputView.xaml",
+              "RelativeDocumentMoniker": "Views\\GradesInputView.xaml",
+              "ToolTip": "C:\\Users\\admin\\source\\repos\\AcademyJornal\\AcademyJornal.UI\\Views\\GradesInputView.xaml",
+              "RelativeToolTip": "Views\\GradesInputView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-05-18T11:39:32.693Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "AppDbContext.cs",
-              "DocumentMoniker": "C:\\\u0421# \u041F\u0420\u041E\u0415\u041A\u0422\u042B\\AcademyJornal\\AcademyJornal.Data\\AppDbContext.cs",
-              "RelativeDocumentMoniker": "..\\AcademyJornal.Data\\AppDbContext.cs",
-              "ToolTip": "C:\\\u0421# \u041F\u0420\u041E\u0415\u041A\u0422\u042B\\AcademyJornal\\AcademyJornal.Data\\AppDbContext.cs",
-              "RelativeToolTip": "..\\AcademyJornal.Data\\AppDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-18T11:36:29.556Z",
+              "Title": "ReviewsView.xaml",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\AcademyJornal\\AcademyJornal.UI\\Views\\ReviewsView.xaml",
+              "RelativeDocumentMoniker": "Views\\ReviewsView.xaml",
+              "ToolTip": "C:\\Users\\admin\\source\\repos\\AcademyJornal\\AcademyJornal.UI\\Views\\ReviewsView.xaml",
+              "RelativeToolTip": "Views\\ReviewsView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-05-21T10:41:32.332Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "Class1.cs",
-              "DocumentMoniker": "C:\\\u0421# \u041F\u0420\u041E\u0415\u041A\u0422\u042B\\AcademyJornal\\AcademyJornal.Data\\Class1.cs",
-              "RelativeDocumentMoniker": "..\\AcademyJornal.Data\\Class1.cs",
-              "ToolTip": "C:\\\u0421# \u041F\u0420\u041E\u0415\u041A\u0422\u042B\\AcademyJornal\\AcademyJornal.Data\\Class1.cs",
-              "RelativeToolTip": "..\\AcademyJornal.Data\\Class1.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-18T11:36:06.829Z",
+              "Title": "App.xaml",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\AcademyJornal\\AcademyJornal.UI\\App.xaml",
+              "RelativeDocumentMoniker": "App.xaml",
+              "ToolTip": "C:\\Users\\admin\\source\\repos\\AcademyJornal\\AcademyJornal.UI\\App.xaml",
+              "RelativeToolTip": "App.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-05-21T10:16:09.28Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 9,
-              "Title": "ReviewGeneratorService.cs",
-              "DocumentMoniker": "C:\\\u0421# \u041F\u0420\u041E\u0415\u041A\u0422\u042B\\AcademyJornal\\AcademyJournal.Core\\Services\\ReviewGeneratorService.cs",
-              "RelativeDocumentMoniker": "..\\AcademyJournal.Core\\Services\\ReviewGeneratorService.cs",
-              "ToolTip": "C:\\\u0421# \u041F\u0420\u041E\u0415\u041A\u0422\u042B\\AcademyJornal\\AcademyJournal.Core\\Services\\ReviewGeneratorService.cs",
-              "RelativeToolTip": "..\\AcademyJournal.Core\\Services\\ReviewGeneratorService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\AcademyJornal\\AcademyJornal.UI\\App.xaml.cs",
+              "RelativeDocumentMoniker": "App.xaml.cs",
+              "ToolTip": "C:\\Users\\admin\\source\\repos\\AcademyJornal\\AcademyJornal.UI\\App.xaml.cs",
+              "RelativeToolTip": "App.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-18T11:35:45.115Z",
+              "WhenOpened": "2026-05-21T10:17:16.097Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 10,
-              "Title": "GradeCalculatorService.cs",
-              "DocumentMoniker": "C:\\\u0421# \u041F\u0420\u041E\u0415\u041A\u0422\u042B\\AcademyJornal\\AcademyJournal.Core\\Services\\GradeCalculatorService.cs",
-              "RelativeDocumentMoniker": "..\\AcademyJournal.Core\\Services\\GradeCalculatorService.cs",
-              "ToolTip": "C:\\\u0421# \u041F\u0420\u041E\u0415\u041A\u0422\u042B\\AcademyJornal\\AcademyJournal.Core\\Services\\GradeCalculatorService.cs",
-              "RelativeToolTip": "..\\AcademyJournal.Core\\Services\\GradeCalculatorService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-18T11:35:35.066Z",
+              "Title": "MaterialsView.xaml",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\AcademyJornal\\AcademyJornal.UI\\Views\\MaterialsView.xaml",
+              "RelativeDocumentMoniker": "Views\\MaterialsView.xaml",
+              "ToolTip": "C:\\Users\\admin\\source\\repos\\AcademyJornal\\AcademyJornal.UI\\Views\\MaterialsView.xaml",
+              "RelativeToolTip": "Views\\MaterialsView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-05-21T10:40:48.04Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 11,
-              "Title": "Grade.cs",
-              "DocumentMoniker": "C:\\\u0421# \u041F\u0420\u041E\u0415\u041A\u0422\u042B\\AcademyJornal\\AcademyJournal.Core\\Models\\Grade.cs",
-              "RelativeDocumentMoniker": "..\\AcademyJournal.Core\\Models\\Grade.cs",
-              "ToolTip": "C:\\\u0421# \u041F\u0420\u041E\u0415\u041A\u0422\u042B\\AcademyJornal\\AcademyJournal.Core\\Models\\Grade.cs",
-              "RelativeToolTip": "..\\AcademyJournal.Core\\Models\\Grade.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "GradeCalculatorServiceTests.cs",
+              "DocumentMoniker": "C:\\\u0421# \u041F\u0420\u041E\u0415\u041A\u0422\u042B\\AcademyJornal\\AcademyJornal.Tests\\Services\\GradeCalculatorServiceTests.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\\u0421# \u041F\u0420\u041E\u0415\u041A\u0422\u042B\\AcademyJornal\\AcademyJornal.Tests\\Services\\GradeCalculatorServiceTests.cs",
+              "ToolTip": "C:\\\u0421# \u041F\u0420\u041E\u0415\u041A\u0422\u042B\\AcademyJornal\\AcademyJornal.Tests\\Services\\GradeCalculatorServiceTests.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\\u0421# \u041F\u0420\u041E\u0415\u041A\u0422\u042B\\AcademyJornal\\AcademyJornal.Tests\\Services\\GradeCalculatorServiceTests.cs",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-18T11:35:05.178Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-18T11:43:09.777Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 12,
-              "Title": "Module.cs",
-              "DocumentMoniker": "C:\\\u0421# \u041F\u0420\u041E\u0415\u041A\u0422\u042B\\AcademyJornal\\AcademyJournal.Core\\Models\\Module.cs",
-              "RelativeDocumentMoniker": "..\\AcademyJournal.Core\\Models\\Module.cs",
-              "ToolTip": "C:\\\u0421# \u041F\u0420\u041E\u0415\u041A\u0422\u042B\\AcademyJornal\\AcademyJournal.Core\\Models\\Module.cs",
-              "RelativeToolTip": "..\\AcademyJournal.Core\\Models\\Module.cs",
+              "Title": "UnitTest1.cs",
+              "DocumentMoniker": "C:\\\u0421# \u041F\u0420\u041E\u0415\u041A\u0422\u042B\\AcademyJornal\\AcademyJornal.Tests\\UnitTest1.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\\u0421# \u041F\u0420\u041E\u0415\u041A\u0422\u042B\\AcademyJornal\\AcademyJornal.Tests\\UnitTest1.cs",
+              "ToolTip": "C:\\\u0421# \u041F\u0420\u041E\u0415\u041A\u0422\u042B\\AcademyJornal\\AcademyJornal.Tests\\UnitTest1.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\\u0421# \u041F\u0420\u041E\u0415\u041A\u0422\u042B\\AcademyJornal\\AcademyJornal.Tests\\UnitTest1.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-18T11:34:38.243Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-18T11:42:14.608Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 13,
-              "Title": "Students.cs",
-              "DocumentMoniker": "C:\\\u0421# \u041F\u0420\u041E\u0415\u041A\u0422\u042B\\AcademyJornal\\AcademyJournal.Core\\Models\\Students.cs",
-              "RelativeDocumentMoniker": "..\\AcademyJournal.Core\\Models\\Students.cs",
-              "ToolTip": "C:\\\u0421# \u041F\u0420\u041E\u0415\u041A\u0422\u042B\\AcademyJornal\\AcademyJournal.Core\\Models\\Students.cs",
-              "RelativeToolTip": "..\\AcademyJournal.Core\\Models\\Students.cs",
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\\u0421# \u041F\u0420\u041E\u0415\u041A\u0422\u042B\\AcademyJornal\\AcademyJornal.Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\\u0421# \u041F\u0420\u041E\u0415\u041A\u0422\u042B\\AcademyJornal\\AcademyJornal.Data\\AppDbContext.cs",
+              "ToolTip": "C:\\\u0421# \u041F\u0420\u041E\u0415\u041A\u0422\u042B\\AcademyJornal\\AcademyJornal.Data\\AppDbContext.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\\u0421# \u041F\u0420\u041E\u0415\u041A\u0422\u042B\\AcademyJornal\\AcademyJornal.Data\\AppDbContext.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-18T11:34:22.287Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-18T11:36:29.556Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 14,
-              "Title": "MainWindow.xaml",
-              "DocumentMoniker": "C:\\\u0421# \u041F\u0420\u041E\u0415\u041A\u0422\u042B\\AcademyJornal\\AcademyJornal.UI\\Views\\MainWindow.xaml",
-              "RelativeDocumentMoniker": "Views\\MainWindow.xaml",
-              "ToolTip": "C:\\\u0421# \u041F\u0420\u041E\u0415\u041A\u0422\u042B\\AcademyJornal\\AcademyJornal.UI\\Views\\MainWindow.xaml",
-              "RelativeToolTip": "Views\\MainWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-05-18T10:20:21.043Z",
-              "EditorCaption": ""
+              "Title": "Class1.cs",
+              "DocumentMoniker": "C:\\\u0421# \u041F\u0420\u041E\u0415\u041A\u0422\u042B\\AcademyJornal\\AcademyJornal.Data\\Class1.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\\u0421# \u041F\u0420\u041E\u0415\u041A\u0422\u042B\\AcademyJornal\\AcademyJornal.Data\\Class1.cs",
+              "ToolTip": "C:\\\u0421# \u041F\u0420\u041E\u0415\u041A\u0422\u042B\\AcademyJornal\\AcademyJornal.Data\\Class1.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\\u0421# \u041F\u0420\u041E\u0415\u041A\u0422\u042B\\AcademyJornal\\AcademyJornal.Data\\Class1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-18T11:36:06.829Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 15,
-              "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "C:\\\u0421# \u041F\u0420\u041E\u0415\u041A\u0422\u042B\\AcademyJornal\\AcademyJornal.UI\\Views\\MainWindow.xaml.cs",
-              "RelativeDocumentMoniker": "Views\\MainWindow.xaml.cs",
-              "ToolTip": "C:\\\u0421# \u041F\u0420\u041E\u0415\u041A\u0422\u042B\\AcademyJornal\\AcademyJornal.UI\\Views\\MainWindow.xaml.cs",
-              "RelativeToolTip": "Views\\MainWindow.xaml.cs",
+              "Title": "ReviewGeneratorService.cs",
+              "DocumentMoniker": "C:\\\u0421# \u041F\u0420\u041E\u0415\u041A\u0422\u042B\\AcademyJornal\\AcademyJournal.Core\\Services\\ReviewGeneratorService.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\\u0421# \u041F\u0420\u041E\u0415\u041A\u0422\u042B\\AcademyJornal\\AcademyJournal.Core\\Services\\ReviewGeneratorService.cs",
+              "ToolTip": "C:\\\u0421# \u041F\u0420\u041E\u0415\u041A\u0422\u042B\\AcademyJornal\\AcademyJournal.Core\\Services\\ReviewGeneratorService.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\\u0421# \u041F\u0420\u041E\u0415\u041A\u0422\u042B\\AcademyJornal\\AcademyJournal.Core\\Services\\ReviewGeneratorService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-18T10:20:20.46Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-18T11:35:45.115Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "GradeCalculatorService.cs",
+              "DocumentMoniker": "C:\\\u0421# \u041F\u0420\u041E\u0415\u041A\u0422\u042B\\AcademyJornal\\AcademyJournal.Core\\Services\\GradeCalculatorService.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\\u0421# \u041F\u0420\u041E\u0415\u041A\u0422\u042B\\AcademyJornal\\AcademyJournal.Core\\Services\\GradeCalculatorService.cs",
+              "ToolTip": "C:\\\u0421# \u041F\u0420\u041E\u0415\u041A\u0422\u042B\\AcademyJornal\\AcademyJournal.Core\\Services\\GradeCalculatorService.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\\u0421# \u041F\u0420\u041E\u0415\u041A\u0422\u042B\\AcademyJornal\\AcademyJournal.Core\\Services\\GradeCalculatorService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-18T11:35:35.066Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Grade.cs",
+              "DocumentMoniker": "C:\\\u0421# \u041F\u0420\u041E\u0415\u041A\u0422\u042B\\AcademyJornal\\AcademyJournal.Core\\Models\\Grade.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\\u0421# \u041F\u0420\u041E\u0415\u041A\u0422\u042B\\AcademyJornal\\AcademyJournal.Core\\Models\\Grade.cs",
+              "ToolTip": "C:\\\u0421# \u041F\u0420\u041E\u0415\u041A\u0422\u042B\\AcademyJornal\\AcademyJournal.Core\\Models\\Grade.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\\u0421# \u041F\u0420\u041E\u0415\u041A\u0422\u042B\\AcademyJornal\\AcademyJournal.Core\\Models\\Grade.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-18T11:35:05.178Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Module.cs",
+              "DocumentMoniker": "C:\\\u0421# \u041F\u0420\u041E\u0415\u041A\u0422\u042B\\AcademyJornal\\AcademyJournal.Core\\Models\\Module.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\\u0421# \u041F\u0420\u041E\u0415\u041A\u0422\u042B\\AcademyJornal\\AcademyJournal.Core\\Models\\Module.cs",
+              "ToolTip": "C:\\\u0421# \u041F\u0420\u041E\u0415\u041A\u0422\u042B\\AcademyJornal\\AcademyJournal.Core\\Models\\Module.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\\u0421# \u041F\u0420\u041E\u0415\u041A\u0422\u042B\\AcademyJornal\\AcademyJournal.Core\\Models\\Module.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-18T11:34:38.243Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Students.cs",
+              "DocumentMoniker": "C:\\\u0421# \u041F\u0420\u041E\u0415\u041A\u0422\u042B\\AcademyJornal\\AcademyJournal.Core\\Models\\Students.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\\u0421# \u041F\u0420\u041E\u0415\u041A\u0422\u042B\\AcademyJornal\\AcademyJournal.Core\\Models\\Students.cs",
+              "ToolTip": "C:\\\u0421# \u041F\u0420\u041E\u0415\u041A\u0422\u042B\\AcademyJornal\\AcademyJournal.Core\\Models\\Students.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\\u0421# \u041F\u0420\u041E\u0415\u041A\u0422\u042B\\AcademyJornal\\AcademyJournal.Core\\Models\\Students.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-18T11:34:22.287Z"
             }
           ]
         },
         {
-          "DockedHeight": 210,
+          "DockedHeight": 21,
           "SelectedChildIndex": -1,
           "Children": [
             {
