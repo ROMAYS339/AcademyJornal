@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-C:\С# ПРОЕКТЫ\AcademyJornal\AcademyJornal.UI\obj\Debug\net10.0-windows\
+C:\Users\firil\source\repos\AcademyJornal\AcademyJornal.UI\obj\Debug\net10.0-windows\
 AcademyJornal.UI
 none
 false
 TRACE;DEBUG;NET;NET10_0;NETCOREAPP;WINDOWS;WINDOWS7_0;NET5_0_OR_GREATER;NET6_0_OR_GREATER;NET7_0_OR_GREATER;NET8_0_OR_GREATER;NET9_0_OR_GREATER;NET10_0_OR_GREATER;NETCOREAPP3_0_OR_GREATER;NETCOREAPP3_1_OR_GREATER;WINDOWS7_0_OR_GREATER
-C:\С# ПРОЕКТЫ\AcademyJornal\AcademyJornal.UI\App.xaml
+C:\Users\firil\source\repos\AcademyJornal\AcademyJornal.UI\App.xaml
 61922125041
 
 91230290439
-2061601768811
+2381215146780
 Themes\DarkTheme.xaml;Themes\LightTheme.xaml;Views\DashboardView.xaml;Views\GradesInputView.xaml;Views\MainWindow.xaml;Views\MaterialsView.xaml;
 
 False
