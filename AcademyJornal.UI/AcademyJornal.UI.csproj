@@ -23,6 +23,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\AcademyJornal.Data\AcademyJornal.Data.csproj" />
+    <ProjectReference Include="..\AcademyJournal.Core\AcademyJournal.Core.csproj" />
   </ItemGroup>
 
 </Project>

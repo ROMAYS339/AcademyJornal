@@ -9,6 +9,7 @@
       "AcademyJornal.UI/1.0.0": {
         "dependencies": {
           "AcademyJornal.Data": "1.0.0",
+          "AcademyJournal.Core": "1.0.0",
           "Microsoft.EntityFrameworkCore": "10.0.8",
           "Microsoft.EntityFrameworkCore.Design": "10.0.8",
           "Microsoft.EntityFrameworkCore.SqlServer": "10.0.8"

@@ -1,4 +1,5 @@
-﻿using AcademyJournal.Core.Models;
+﻿using AcademyJournal.Core.Interfaces;
+using AcademyJournal.Core.Models;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -6,7 +7,7 @@ using System.Text;
 
 namespace AcademyJornal.Data
 {
-    public class AppDbContext : DbContext
+    public class AppDbContext : DbContext, IAppDbContext
     {
         public DbSet<Student> Student  { get; set; }
         public DbSet<Module> Modules { get; set; }
