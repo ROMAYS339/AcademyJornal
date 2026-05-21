@@ -20,7 +20,6 @@
                 BorderBrush="{DynamicResource BorderBrush}"
                 BorderThickness="0,0,1,0">
             <DockPanel>
-                <!-- Логотип -->
                 <StackPanel DockPanel.Dock="Top" Margin="16,20,16,16">
                     <TextBlock Text="🎓 AcademyJornal"
                                FontSize="16" FontWeight="Bold"
