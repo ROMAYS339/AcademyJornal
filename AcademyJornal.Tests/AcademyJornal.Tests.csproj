@@ -25,6 +25,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\AcademyJournal.Core\AcademyJournal.Core.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Using Include="Xunit" />
   </ItemGroup>
 
