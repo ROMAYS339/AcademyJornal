@@ -16,7 +16,7 @@ namespace AcademyJornal.UI.Views
     /// <summary>
     /// Логика взаимодействия для DashboardView.xaml
     /// </summary>
-    public partial class DashboardView : Page
+    public partial class DashboardView : UserControl
     {
         public DashboardView()
         {

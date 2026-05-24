@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "G:\\ITtop\\Тестирование\\ProjectFixedFirst\\AcademyJornal\\AcademyJornal.Tests\\AcademyJornal.Tests.csproj": {}
+    "C:\\Users\\admin\\source\\repos\\AcademyJornal\\AcademyJornal.Tests\\AcademyJornal.Tests.csproj": {}
   },
   "projects": {
-    "G:\\ITtop\\Тестирование\\ProjectFixedFirst\\AcademyJornal\\AcademyJornal.Tests\\AcademyJornal.Tests.csproj": {
+    "C:\\Users\\admin\\source\\repos\\AcademyJornal\\AcademyJornal.Tests\\AcademyJornal.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\ITtop\\Тестирование\\ProjectFixedFirst\\AcademyJornal\\AcademyJornal.Tests\\AcademyJornal.Tests.csproj",
+        "projectUniqueName": "C:\\Users\\admin\\source\\repos\\AcademyJornal\\AcademyJornal.Tests\\AcademyJornal.Tests.csproj",
         "projectName": "AcademyJornal.Tests",
-        "projectPath": "G:\\ITtop\\Тестирование\\ProjectFixedFirst\\AcademyJornal\\AcademyJornal.Tests\\AcademyJornal.Tests.csproj",
-        "packagesPath": "C:\\Users\\Вова\\.nuget\\packages\\",
-        "outputPath": "G:\\ITtop\\Тестирование\\ProjectFixedFirst\\AcademyJornal\\AcademyJornal.Tests\\obj\\",
+        "projectPath": "C:\\Users\\admin\\source\\repos\\AcademyJornal\\AcademyJornal.Tests\\AcademyJornal.Tests.csproj",
+        "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\admin\\source\\repos\\AcademyJornal\\AcademyJornal.Tests\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Вова\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],

@@ -502,3 +502,4 @@ G:\ITtop\Тестирование\ProjectFixedFirst\AcademyJornal\AcademyJornal.
 G:\ITtop\Тестирование\ProjectFixedFirst\AcademyJornal\AcademyJornal.UI\obj\Debug\net10.0-windows\AcademyJornal.UI.pdb
 G:\ITtop\Тестирование\ProjectFixedFirst\AcademyJornal\AcademyJornal.UI\obj\Debug\net10.0-windows\AcademyJornal.UI.genruntimeconfig.cache
 G:\ITtop\Тестирование\ProjectFixedFirst\AcademyJornal\AcademyJornal.UI\obj\Debug\net10.0-windows\ref\AcademyJornal.UI.dll
+C:\Users\admin\source\repos\AcademyJornal\AcademyJornal.UI\obj\Debug\net10.0-windows\GeneratedInternalTypeHelper.g.cs

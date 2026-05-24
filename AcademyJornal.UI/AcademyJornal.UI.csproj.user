@@ -8,6 +8,9 @@
     <Compile Update="Views\GradesInputView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Views\MainWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Views\MaterialsView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>

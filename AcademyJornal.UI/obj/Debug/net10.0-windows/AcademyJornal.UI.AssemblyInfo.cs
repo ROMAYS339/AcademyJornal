@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AcademyJornal.UI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3709c0a28e0ff02dd9eb9912ffc805c10396d2af")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b15f98280fbe60a81a542570127103e8bc039920")]
 [assembly: System.Reflection.AssemblyProductAttribute("AcademyJornal.UI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AcademyJornal.UI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
