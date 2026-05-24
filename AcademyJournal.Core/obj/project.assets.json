@@ -3673,11 +3673,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "G:\\ITtop\\Тестирование\\ProjectFixedFirst\\AcademyJornal\\AcademyJournal.Core\\AcademyJournal.Core.csproj",
+      "projectUniqueName": "G:\\ITtop\\Тестирование\\Тест функций\\AcademyJornal\\AcademyJournal.Core\\AcademyJournal.Core.csproj",
       "projectName": "AcademyJournal.Core",
-      "projectPath": "G:\\ITtop\\Тестирование\\ProjectFixedFirst\\AcademyJornal\\AcademyJournal.Core\\AcademyJournal.Core.csproj",
+      "projectPath": "G:\\ITtop\\Тестирование\\Тест функций\\AcademyJornal\\AcademyJournal.Core\\AcademyJournal.Core.csproj",
       "packagesPath": "C:\\Users\\Вова\\.nuget\\packages\\",
-      "outputPath": "G:\\ITtop\\Тестирование\\ProjectFixedFirst\\AcademyJornal\\AcademyJournal.Core\\obj\\",
+      "outputPath": "G:\\ITtop\\Тестирование\\Тест функций\\AcademyJornal\\AcademyJournal.Core\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

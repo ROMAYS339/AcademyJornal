@@ -3693,11 +3693,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "G:\\ITtop\\Тестирование\\ProjectFixedFirst\\AcademyJornal\\AcademyJornal.Data\\AcademyJornal.Data.csproj",
+      "projectUniqueName": "G:\\ITtop\\Тестирование\\Тест функций\\AcademyJornal\\AcademyJornal.Data\\AcademyJornal.Data.csproj",
       "projectName": "AcademyJornal.Data",
-      "projectPath": "G:\\ITtop\\Тестирование\\ProjectFixedFirst\\AcademyJornal\\AcademyJornal.Data\\AcademyJornal.Data.csproj",
+      "projectPath": "G:\\ITtop\\Тестирование\\Тест функций\\AcademyJornal\\AcademyJornal.Data\\AcademyJornal.Data.csproj",
       "packagesPath": "C:\\Users\\Вова\\.nuget\\packages\\",
-      "outputPath": "G:\\ITtop\\Тестирование\\ProjectFixedFirst\\AcademyJornal\\AcademyJornal.Data\\obj\\",
+      "outputPath": "G:\\ITtop\\Тестирование\\Тест функций\\AcademyJornal\\AcademyJornal.Data\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -3719,8 +3719,8 @@
         "net10.0": {
           "targetAlias": "net10.0",
           "projectReferences": {
-            "G:\\ITtop\\Тестирование\\ProjectFixedFirst\\AcademyJornal\\AcademyJournal.Core\\AcademyJournal.Core.csproj": {
-              "projectPath": "G:\\ITtop\\Тестирование\\ProjectFixedFirst\\AcademyJornal\\AcademyJournal.Core\\AcademyJournal.Core.csproj"
+            "G:\\ITtop\\Тестирование\\Тест функций\\AcademyJornal\\AcademyJournal.Core\\AcademyJournal.Core.csproj": {
+              "projectPath": "G:\\ITtop\\Тестирование\\Тест функций\\AcademyJornal\\AcademyJournal.Core\\AcademyJournal.Core.csproj"
             }
           }
         }
