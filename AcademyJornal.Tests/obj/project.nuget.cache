@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "STOK+QZ26k0=",
+  "dgSpecHash": "fxx4pFk7W4c=",
   "success": true,
-  "projectFilePath": "G:\\ITtop\\Тестирование\\ProjectFixedFirst\\AcademyJornal\\AcademyJornal.Tests\\AcademyJornal.Tests.csproj",
+  "projectFilePath": "G:\\ITtop\\Тестирование\\ProjectFixedGenReview\\AcademyJornal\\AcademyJornal.Tests\\AcademyJornal.Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Вова\\.nuget\\packages\\azure.core\\1.47.1\\azure.core.1.47.1.nupkg.sha512",
     "C:\\Users\\Вова\\.nuget\\packages\\azure.identity\\1.14.2\\azure.identity.1.14.2.nupkg.sha512",
