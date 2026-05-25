@@ -18,9 +18,7 @@ namespace AcademyJornal.UI.Views
     /// </summary>
     public partial class ReviewsView : UserControl
     {
-        public ReviewsView()
-        {
-            InitializeComponent();
-        }
+        public ReviewsView() => InitializeComponent();
     }
+
 }

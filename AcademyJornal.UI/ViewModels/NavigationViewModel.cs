@@ -9,7 +9,7 @@ using System.Windows.Input;
 
 namespace AcademyJornal.UI.ViewModels
 {
-    public class Navigation : INotifyPropertyChanged
+    public class NavigationViewModel : INotifyPropertyChanged
     
     {
         private readonly UserControl _dashboardView = new DashboardView();
@@ -39,7 +39,7 @@ namespace AcademyJornal.UI.ViewModels
         public ICommand NavigateMaterialsCommand { get; }
         public ICommand NavigateReviewsCommand { get; }
 
-        public Navigation()
+        public NavigationViewModel()
         {
             _currentView = _dashboardView;
 
