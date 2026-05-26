@@ -1,7 +1,7 @@
 {
-  "version": 3,
+  "version": 4,
   "targets": {
-    "net10.0-windows7.0": {
+    "net10.0-windows": {
       "Azure.Core/1.47.1": {
         "type": "package",
         "dependencies": {
@@ -3440,7 +3440,7 @@
     }
   },
   "projectFileDependencyGroups": {
-    "net10.0-windows7.0": [
+    "net10.0-windows": [
       "AcademyJornal.Data >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 10.0.8",
       "Microsoft.EntityFrameworkCore.Design >= 10.0.8",
@@ -3449,23 +3449,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Вова\\.nuget\\packages\\": {},
+    "C:\\Users\\111\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "G:\\ITtop\\Тестирование\\ProjectFixedGenReview\\AcademyJornal\\AcademyJornal.UI\\AcademyJornal.UI.csproj",
+      "projectUniqueName": "C:\\Users\\111\\Downloads\\Новая ветвь\\AcademyJornal\\AcademyJornal.UI\\AcademyJornal.UI.csproj",
       "projectName": "AcademyJornal.UI",
-      "projectPath": "G:\\ITtop\\Тестирование\\ProjectFixedGenReview\\AcademyJornal\\AcademyJornal.UI\\AcademyJornal.UI.csproj",
-      "packagesPath": "C:\\Users\\Вова\\.nuget\\packages\\",
-      "outputPath": "G:\\ITtop\\Тестирование\\ProjectFixedGenReview\\AcademyJornal\\AcademyJornal.UI\\obj\\",
+      "projectPath": "C:\\Users\\111\\Downloads\\Новая ветвь\\AcademyJornal\\AcademyJornal.UI\\AcademyJornal.UI.csproj",
+      "packagesPath": "C:\\Users\\111\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\111\\Downloads\\Новая ветвь\\AcademyJornal\\AcademyJornal.UI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Вова\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\111\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -3474,15 +3474,15 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "net10.0-windows7.0": {
+        "net10.0-windows": {
+          "framework": "net10.0-windows7.0",
           "targetAlias": "net10.0-windows",
           "projectReferences": {
-            "G:\\ITtop\\Тестирование\\ProjectFixedGenReview\\AcademyJornal\\AcademyJornal.Data\\AcademyJornal.Data.csproj": {
-              "projectPath": "G:\\ITtop\\Тестирование\\ProjectFixedGenReview\\AcademyJornal\\AcademyJornal.Data\\AcademyJornal.Data.csproj"
+            "C:\\Users\\111\\Downloads\\Новая ветвь\\AcademyJornal\\AcademyJornal.Data\\AcademyJornal.Data.csproj": {
+              "projectPath": "C:\\Users\\111\\Downloads\\Новая ветвь\\AcademyJornal\\AcademyJornal.Data\\AcademyJornal.Data.csproj"
             }
           }
         }
@@ -3497,10 +3497,11 @@
         "auditLevel": "low",
         "auditMode": "all"
       },
-      "SdkAnalysisLevel": "10.0.100"
+      "SdkAnalysisLevel": "10.0.300"
     },
     "frameworks": {
-      "net10.0-windows7.0": {
+      "net10.0-windows": {
+        "framework": "net10.0-windows7.0",
         "targetAlias": "net10.0-windows",
         "dependencies": {
           "Microsoft.EntityFrameworkCore": {
@@ -3543,7 +3544,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.103/PortableRuntimeIdentifierGraph.json",
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.300/PortableRuntimeIdentifierGraph.json",
         "packagesToPrune": {
           "Microsoft.CSharp": "(,4.7.32767]",
           "Microsoft.VisualBasic": "(,10.4.32767]",
