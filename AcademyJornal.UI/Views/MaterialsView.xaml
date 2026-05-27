@@ -6,7 +6,39 @@
              xmlns:local="clr-namespace:AcademyJornal.UI.Views"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
-    <Grid>
-            
-    </Grid>
+   
+        <Grid Margin="28,24">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <TextBlock Grid.Row="0"
+                   Text="📁 Учебные материалы"
+                   FontSize="22" FontWeight="Bold"
+                   Foreground="{DynamicResource AccentPurpleLightBrush}"
+                   Margin="0,0,0,4"/>
+            <TextBlock Grid.Row="1"
+                   Text="Раздел для хранения и просмотра учебных файлов. Файлы хранятся в папке Materials/ рядом с приложением."
+                   FontSize="12" Foreground="{DynamicResource TextSecondaryBrush}"
+                   Margin="0,0,0,20" TextWrapping="Wrap"/>
+
+            <Border Grid.Row="2"
+                Background="{DynamicResource SurfaceBrush}"
+                BorderBrush="{DynamicResource BorderBrush}"
+                BorderThickness="1" CornerRadius="12"
+                Padding="32">
+                <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <TextBlock Text="📂" FontSize="48" HorizontalAlignment="Center" Margin="0,0,0,16"/>
+                    <TextBlock Text="Нет загруженных материалов"
+                           FontSize="16" FontWeight="SemiBold"
+                           Foreground="{DynamicResource TextPrimaryBrush}"
+                           HorizontalAlignment="Center"/>
+                    <TextBlock Text="Поместите файлы в папку Materials/ для их отображения здесь."
+                           FontSize="12" Foreground="{DynamicResource TextSecondaryBrush}"
+                           HorizontalAlignment="Center" Margin="0,8,0,0"/>
+                </StackPanel>
+            </Border>
+        </Grid>
 </UserControl>
