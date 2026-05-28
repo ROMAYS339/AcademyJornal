@@ -49,9 +49,9 @@ namespace AcademyJournal.Core.Services
                         {
                             throw new Exception("GradeGreaterThan12");
                         }
-                        if (gradeValue <= 0)
+                        if (i < 0)
                         {
-                            throw new Exception("GradeLessOrEqual0");
+                            throw new Exception("GradeLess0");
                         }
                         grades.Add(gradeValue);
                     }

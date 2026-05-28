@@ -1,4 +1,7 @@
-﻿using System;
+﻿using AcademyJornal.Data;
+using AcademyJournal.Core.Models;
+using AcademyJournal.Core.Services;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Windows;
@@ -19,6 +22,8 @@ namespace AcademyJornal.UI.Views
     public partial class DashboardView : UserControl
     {
         private readonly List<StudentSummary> _allData = SampleData.GetSummaries();
+        private readonly AppDbContext _db = new();
+        private readonly GradeCalculatorService _calc;
 
         public DashboardView()
         {
@@ -161,6 +166,13 @@ namespace AcademyJornal.UI.Views
                 Canvas.SetTop(nameLbl, padT + chartH + 4);
                 ChartCanvas.Children.Add(nameLbl);
             }
+        }
+
+        private StudentSummary calcFinalScore(Student student, Module module)
+        {
+            decimal finScore = _calc.CalculateModuleAverage(student.Id, module.Id);
+            StudentSummary summary = new StudentSummary { StudentName = student.FullName, GroupName = student.Group, ModuleName = module.Name, FinalScore = Convert.ToDouble(finScore), HwPercent = 80};
+            return summary;
         }
     }
 
