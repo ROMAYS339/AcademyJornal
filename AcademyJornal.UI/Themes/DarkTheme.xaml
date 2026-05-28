@@ -19,7 +19,7 @@
     <SolidColorBrush x:Key="AccentPinkBrush"       Color="{StaticResource AccentPinkColor}"/>
     <SolidColorBrush x:Key="AccentPurpleBrush"     Color="{StaticResource AccentPurpleColor}"/>
     <SolidColorBrush x:Key="AccentPurpleLightBrush" Color="{StaticResource AccentPurpleLightColor}"/>
-    <SolidColorBrush x:Key="TextPrimaryBrush"      Color="{StaticResource TextPrimaryColor}"/>
+    <SolidColorBrush x:Key="TextPrimaryBrush"      Color="{StaticResource  GreenColor }"/>
     <SolidColorBrush x:Key="TextSecondaryBrush"    Color="{StaticResource TextSecondaryColor}"/>
     <SolidColorBrush x:Key="BorderBrush"           Color="{StaticResource BorderColor}"/>
     <SolidColorBrush x:Key="GreenBrush"            Color="{StaticResource GreenColor}"/>
@@ -82,11 +82,93 @@
 
     <Style x:Key="ComboStyle" TargetType="ComboBox">
         <Setter Property="Background"      Value="{StaticResource SurfaceAltBrush}"/>
-        <Setter Property="Foreground"      Value="{StaticResource TextPrimaryBrush}"/>
+        <Setter Property="Foreground"      Value="{StaticResource  SurfaceAltBrush}"/>
         <Setter Property="BorderBrush"     Value="{StaticResource BorderBrush}"/>
         <Setter Property="BorderThickness" Value="1"/>
         <Setter Property="Padding"         Value="10,6"/>
         <Setter Property="FontSize"        Value="13"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="ComboBox">
+                    <Grid>
+                        <ToggleButton
+                        Background="{TemplateBinding Background}"
+                        BorderBrush="{TemplateBinding BorderBrush}"
+                        BorderThickness="{TemplateBinding BorderThickness}"
+                        Padding="{TemplateBinding Padding}"
+                        Foreground="{TemplateBinding Foreground}"
+                        IsChecked="{Binding IsDropDownOpen,
+                            RelativeSource={RelativeSource TemplatedParent},
+                            Mode=TwoWay}"
+                        Focusable="False">
+                            <ToggleButton.Template>
+                                <ControlTemplate TargetType="ToggleButton">
+                                    <Border Background="{TemplateBinding Background}"
+                                        BorderBrush="{TemplateBinding BorderBrush}"
+                                        BorderThickness="{TemplateBinding BorderThickness}"
+                                        CornerRadius="8">
+                                        <Grid>
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition/>
+                                                <ColumnDefinition Width="24"/>
+                                            </Grid.ColumnDefinitions>
+                                            <ContentPresenter Grid.Column="0"
+                                            Margin="{TemplateBinding Padding}"
+                                            VerticalAlignment="Center"/>
+                                            <Path Grid.Column="1"
+                                              Data="M0,0 L4,4 L8,0"
+                                              Stroke="{StaticResource TextSecondaryBrush}"
+                                              StrokeThickness="1.5"
+                                              HorizontalAlignment="Center"
+                                              VerticalAlignment="Center"/>
+                                        </Grid>
+                                    </Border>
+                                </ControlTemplate>
+                            </ToggleButton.Template>
+                        </ToggleButton>
+
+                        <ContentPresenter
+                        IsHitTestVisible="False"
+                        Content="{TemplateBinding SelectionBoxItem}"
+                        ContentTemplate="{TemplateBinding SelectionBoxItemTemplate}"
+                        Margin="12,0,30,0"
+                        VerticalAlignment="Center"/>
+                        <Popup IsOpen="{TemplateBinding IsDropDownOpen}"
+                           Placement="Bottom"
+                           AllowsTransparency="True"
+                           Focusable="False">
+                            <Border Background="{StaticResource SurfaceAltBrush}"
+                                BorderBrush="{StaticResource BorderBrush}"
+                                BorderThickness="1"
+                                CornerRadius="8"
+                                MinWidth="{TemplateBinding ActualWidth}">
+                                <ScrollViewer MaxHeight="200">
+                                    <ItemsPresenter/>
+                                </ScrollViewer>
+                            </Border>
+                        </Popup>
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+        <Setter Property="ItemContainerStyle">
+            <Setter.Value>
+                <Style TargetType="ComboBoxItem">
+                    <Setter Property="Background"  Value="Transparent"/>
+                    <Setter Property="Foreground"  Value="{StaticResource TextPrimaryBrush}"/>
+                    <Setter Property="Padding"     Value="10,6"/>
+                    <Style.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" Value="#22AFA9EC"/>
+                        </Trigger>
+                        <Trigger Property="IsSelected" Value="True">
+                            <Setter Property="Background" Value="#33AFA9EC"/>
+                            <Setter Property="Foreground" Value="{StaticResource AccentPurpleLightBrush}"/>
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </Setter.Value>
+        </Setter>
     </Style>
 
     <Style x:Key="DataGridStyle" TargetType="DataGrid">

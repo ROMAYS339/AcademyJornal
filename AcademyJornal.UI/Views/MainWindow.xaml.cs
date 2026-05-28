@@ -17,31 +17,13 @@ namespace AcademyJornal.UI
     /// </summary>
     public partial class MainWindow : Window
     {
-        private readonly DashboardView _dashboard = new();
-        private readonly GradesInputView _grades = new();
-        private readonly MaterialsView _materials = new();
-        private readonly ReviewsView _reviews = new();
 
         public MainWindow()
         {
             InitializeComponent();
-            MainContent.Content = _dashboard;
         }
 
-        private void Nav_Checked(object sender, RoutedEventArgs e)
-        {
-            if (sender is RadioButton rb && MainContent != null)
-            {
-                MainContent.Content = rb.Tag?.ToString() switch
-                {
-                    "Dashboard" => _dashboard,
-                    "Grades" => _grades,
-                    "Materials" => _materials,
-                    "Reviews" => _reviews,
-                    _ => _dashboard,
-                };
-            }
-        }
+      
 
         private void BtnToggleTheme_Click(object sender, RoutedEventArgs e)
         {
