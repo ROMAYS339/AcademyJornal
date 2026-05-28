@@ -4,41 +4,81 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:AcademyJornal.UI.Views"
+             xmlns:vm="clr-namespace:AcademyJornal.UI.ViewModels"
              mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800">
-   
-        <Grid Margin="28,24">
-            <Grid.RowDefinitions>
-                <RowDefinition Height="Auto"/>
-                <RowDefinition Height="Auto"/>
-                <RowDefinition Height="*"/>
-            </Grid.RowDefinitions>
+             d:DesignHeight="450" d:DesignWidth="800"
+             Background="{DynamicResource BackgroundBrush}">
+    <UserControl.DataContext>
+        <vm:MaterialsViewModel/>
+    </UserControl.DataContext>
 
-            <TextBlock Grid.Row="0"
-                   Text="📁 Учебные материалы"
-                   FontSize="22" FontWeight="Bold"
-                   Foreground="{DynamicResource AccentPurpleLightBrush}"
-                   Margin="0,0,0,4"/>
-            <TextBlock Grid.Row="1"
-                   Text="Раздел для хранения и просмотра учебных файлов. Файлы хранятся в папке Materials/ рядом с приложением."
-                   FontSize="12" Foreground="{DynamicResource TextSecondaryBrush}"
-                   Margin="0,0,0,20" TextWrapping="Wrap"/>
+    <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
 
-            <Border Grid.Row="2"
-                Background="{DynamicResource SurfaceBrush}"
-                BorderBrush="{DynamicResource BorderBrush}"
-                BorderThickness="1" CornerRadius="12"
-                Padding="32">
-                <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
-                    <TextBlock Text="📂" FontSize="48" HorizontalAlignment="Center" Margin="0,0,0,16"/>
-                    <TextBlock Text="Нет загруженных материалов"
-                           FontSize="16" FontWeight="SemiBold"
-                           Foreground="{DynamicResource TextPrimaryBrush}"
-                           HorizontalAlignment="Center"/>
-                    <TextBlock Text="Поместите файлы в папку Materials/ для их отображения здесь."
-                           FontSize="12" Foreground="{DynamicResource TextSecondaryBrush}"
-                           HorizontalAlignment="Center" Margin="0,8,0,0"/>
-                </StackPanel>
-            </Border>
+        <!-- Заголовок -->
+        <TextBlock Text="📁 Учебные материалы" FontSize="20" FontWeight="Bold"
+                   Foreground="{DynamicResource AccentPurpleLightBrush}" Margin="0,0,0,8"/>
+
+        <!-- Панель инструментов -->
+        <Grid Grid.Row="1" Margin="0,0,0,10">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+            <TextBox Text="{Binding Filter, UpdateSourceTrigger=PropertyChanged}"
+                     Style="{DynamicResource InputBox}"
+                     Width="200" HorizontalAlignment="Left"
+                     ToolTip="Фильтр по имени файла"/>
+            <Button Grid.Column="1" Content="🔄 Обновить"
+                    Style="{DynamicResource PrimaryButton}"
+                    Command="{Binding RefreshCommand}"/>
         </Grid>
+
+        <!-- Разделитель -->
+        <Separator Grid.Row="2" Background="{DynamicResource BorderBrush}" Margin="0,0,0,8"/>
+
+        <!-- Список материалов -->
+        <ScrollViewer Grid.Row="3" VerticalScrollBarVisibility="Auto">
+            <ItemsControl ItemsSource="{Binding Materials}">
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <Border Background="{DynamicResource SurfaceBrush}"
+                                BorderBrush="{DynamicResource BorderBrush}"
+                                BorderThickness="1" CornerRadius="8"
+                                Padding="12,8" Margin="0,0,0,6"
+                                Cursor="Hand">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                </Grid.ColumnDefinitions>
+                                <TextBlock Text="📄" FontSize="18" VerticalAlignment="Center" Margin="0,0,10,0"/>
+                                <StackPanel Grid.Column="1">
+                                    <TextBlock Text="{Binding DisplayName}" FontSize="13"
+                                               Foreground="{DynamicResource TextPrimaryBrush}"/>
+                                    <StackPanel Orientation="Horizontal" Margin="0,4,0,0">
+                                        <TextBlock Text="{Binding DisplaySize}" FontSize="11"
+                                                   Foreground="{DynamicResource TextSecondaryBrush}" Margin="0,0,10,0"/>
+                                        <TextBlock Text="{Binding DisplayCategory}" FontSize="11"
+                                                   Foreground="{DynamicResource AccentPinkBrush}"/>
+                                    </StackPanel>
+                                </StackPanel>
+                                <Button Grid.Column="2" Content="Открыть"
+                                        Style="{DynamicResource PrimaryButton}"
+                                        Padding="8,4" FontSize="11"
+                                        Command="{Binding OpenCommand}"
+                                        VerticalAlignment="Center"/>
+                            </Grid>
+                        </Border>
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ItemsControl>
+        </ScrollViewer>
+    </Grid>
 </UserControl>

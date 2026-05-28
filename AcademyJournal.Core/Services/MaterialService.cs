@@ -277,5 +277,31 @@ namespace AcademyJournal.Core.Services
             var safeName = string.Join("_", nameWithoutExtension.Split(invalidChars, StringSplitOptions.RemoveEmptyEntries));
             return $"{safeName}{extension}";
         }
+
+        public async Task<MaterialOperationResult> SaveTextMaterialAsync(string relativePath, string newContent)
+        {
+            var result = new MaterialOperationResult();
+            try
+            {
+                var fullPath = Path.Combine(_rootPath, relativePath);
+                if (!File.Exists(fullPath))
+                {
+                    result.Success = false;
+                    result.Message = "Файл не найден";
+                    return result;
+                }
+
+                await File.WriteAllTextAsync(fullPath, newContent);
+                result.Success = true;
+                result.Message = "Файл сохранён";
+                result.MaterialInfo = CreateMaterialInfo(fullPath, relativePath);
+            }
+            catch (Exception ex)
+            {
+                result.Success = false;
+                result.Message = ex.Message;
+            }
+            return result;
+        }
     }
 }

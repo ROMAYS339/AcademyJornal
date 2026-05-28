@@ -70,3 +70,21 @@ G:\ITtop\Тестирование\ProjectFixedGenReview\AcademyJornal\AcademyJor
 G:\ITtop\Тестирование\ProjectFixedGenReview\AcademyJornal\AcademyJornal.Data\obj\Debug\net10.0\AcademyJornal.Data.pdb
 G:\ITtop\Тестирование\ProjectFixedGenReview\AcademyJornal\AcademyJornal.Data\obj\Debug\net10.0\AcademyJornal.Data.genruntimeconfig.cache
 G:\ITtop\Тестирование\ProjectFixedGenReview\AcademyJornal\AcademyJornal.Data\obj\Debug\net10.0\ref\AcademyJornal.Data.dll
+C:\С# ПРОЕКТЫ\AcademyJornal\AcademyJornal.Data\bin\Debug\net10.0\AcademyJornal.Data.deps.json
+C:\С# ПРОЕКТЫ\AcademyJornal\AcademyJornal.Data\bin\Debug\net10.0\AcademyJornal.Data.runtimeconfig.json
+C:\С# ПРОЕКТЫ\AcademyJornal\AcademyJornal.Data\bin\Debug\net10.0\AcademyJornal.Data.dll
+C:\С# ПРОЕКТЫ\AcademyJornal\AcademyJornal.Data\bin\Debug\net10.0\AcademyJornal.Data.pdb
+C:\С# ПРОЕКТЫ\AcademyJornal\AcademyJornal.Data\bin\Debug\net10.0\AcademyJournal.Core.dll
+C:\С# ПРОЕКТЫ\AcademyJornal\AcademyJornal.Data\bin\Debug\net10.0\AcademyJournal.Core.pdb
+C:\С# ПРОЕКТЫ\AcademyJornal\AcademyJornal.Data\obj\Debug\net10.0\AcademyJornal.Data.csproj.AssemblyReference.cache
+C:\С# ПРОЕКТЫ\AcademyJornal\AcademyJornal.Data\obj\Debug\net10.0\AcademyJornal.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\С# ПРОЕКТЫ\AcademyJornal\AcademyJornal.Data\obj\Debug\net10.0\AcademyJornal.Data.AssemblyInfoInputs.cache
+C:\С# ПРОЕКТЫ\AcademyJornal\AcademyJornal.Data\obj\Debug\net10.0\AcademyJornal.Data.AssemblyInfo.cs
+C:\С# ПРОЕКТЫ\AcademyJornal\AcademyJornal.Data\obj\Debug\net10.0\AcademyJornal.Data.csproj.CoreCompileInputs.cache
+C:\С# ПРОЕКТЫ\AcademyJornal\AcademyJornal.Data\obj\Debug\net10.0\AcademyJornal.Data.sourcelink.json
+C:\С# ПРОЕКТЫ\AcademyJornal\AcademyJornal.Data\obj\Debug\net10.0\AcademyJ.B5948A3A.Up2Date
+C:\С# ПРОЕКТЫ\AcademyJornal\AcademyJornal.Data\obj\Debug\net10.0\AcademyJornal.Data.dll
+C:\С# ПРОЕКТЫ\AcademyJornal\AcademyJornal.Data\obj\Debug\net10.0\refint\AcademyJornal.Data.dll
+C:\С# ПРОЕКТЫ\AcademyJornal\AcademyJornal.Data\obj\Debug\net10.0\AcademyJornal.Data.pdb
+C:\С# ПРОЕКТЫ\AcademyJornal\AcademyJornal.Data\obj\Debug\net10.0\AcademyJornal.Data.genruntimeconfig.cache
+C:\С# ПРОЕКТЫ\AcademyJornal\AcademyJornal.Data\obj\Debug\net10.0\ref\AcademyJornal.Data.dll

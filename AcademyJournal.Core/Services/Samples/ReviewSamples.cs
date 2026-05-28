@@ -6,6 +6,12 @@ namespace AcademyJournal.Core.Services.Samples
 {
     public static class ReviewSamples
     {
+        public static readonly List<string> ModuleIntros = new()
+        {
+            "Модуль «{ModuleName}» был направлен на освоение ключевых навыков и закрепление материала.",
+            "В рамках модуля «{ModuleName}» студенты изучали теоретические основы и выполняли практические задания.",
+            "Программа модуля «{ModuleName}» включала разбор актуальных тем и интенсивную практику."
+        };
         // ========================================= 2. Успехи (Разработка) =========================================
         public static readonly List<string> DevSuccessPhrases = new List<string>
 {

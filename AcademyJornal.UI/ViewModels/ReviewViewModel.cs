@@ -2,11 +2,10 @@
 using AcademyJournal.Core.Models;
 using AcademyJournal.Core.Services;
 using System;
-using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
+using System.Linq;
 using System.Runtime.CompilerServices;
-using System.Text;
 using System.Windows;
 using System.Windows.Input;
 
@@ -32,17 +31,14 @@ namespace AcademyJornal.UI.ViewModels
             => PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(n));
     }
 
-    /// <summary>ViewModel для вкладки «Отзывы».</summary>
     public class ReviewViewModel : INotifyPropertyChanged
     {
         private readonly AppDbContext _db = new();
         private ReviewGeneratorService? _gen;
 
-        // ── Списки для ComboBox ────────────────────────────────────────────
         public ObservableCollection<Student> Students { get; } = new();
         public ObservableCollection<Module> Modules { get; } = new();
 
-        // ── Выбранные значения ────────────────────────────────────────────
         private Student? _selectedStudent;
         public Student? SelectedStudent
         {
@@ -57,7 +53,6 @@ namespace AcademyJornal.UI.ViewModels
             set { _selectedModule = value; OnPropertyChanged(); }
         }
 
-        // ── Сообщение об ошибке ───────────────────────────────────────────
         private string _errorMessage = "";
         public string ErrorMessage
         {
@@ -72,10 +67,8 @@ namespace AcademyJornal.UI.ViewModels
             private set { _hasError = value; OnPropertyChanged(); }
         }
 
-        // ── Список сгенерированных отзывов ────────────────────────────────
         public ObservableCollection<ReviewItem> Reviews { get; } = new();
 
-        // ── Команды ───────────────────────────────────────────────────────
         public ICommand GenerateCommand { get; }
         public ICommand DeleteCommand { get; }
         public ICommand CopyCommand { get; }
@@ -157,7 +150,7 @@ namespace AcademyJornal.UI.ViewModels
                     StudentId = item.StudentId,
                     ModuleId = item.ModuleId,
                     CreatedAt = DateTime.Now,
-                    IsEdited = item.Text != item.Text
+                    IsEdited = false
                 };
                 _db.Review.Add(review);
                 _db.SaveChanges();
@@ -174,5 +167,4 @@ namespace AcademyJornal.UI.ViewModels
         private void OnPropertyChanged([CallerMemberName] string? n = null)
             => PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(n));
     }
-
 }
