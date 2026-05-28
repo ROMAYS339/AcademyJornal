@@ -1,4 +1,6 @@
-﻿using System;
+﻿using AcademyJournal.Core.Models;
+using AcademyJournal.Core.Services;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Windows;
@@ -20,6 +22,46 @@ namespace AcademyJornal.UI.Views
         public GradesInputView()
         {
             InitializeComponent();
+        }
+
+        private void Parse_Click(object sender, RoutedEventArgs e)
+        {
+            List<StudentGradeInput> students = TextParserService.Parse(GradeInputBox.Text);
+
+            while (GradeGrid.Columns.Count > 1)
+            {
+                GradeGrid.Columns.RemoveAt(1);
+            }
+
+            if (students == null || students.Count == 0) return;
+
+            // 2. Находим, какое максимальное количество оценок есть у кого-то из студентов
+            int maxGradesCount = students.Max(s => s.grades?.Count ?? 0);
+
+            // 3. Генерируем новые колонки в столбик
+            for (int i = 0; i < maxGradesCount; i++)
+            {
+                var gradeColumn = new DataGridTextColumn
+                {
+                    Header = $"Оценка {i + 1}",
+                    // Привязываемся к конкретному индексу в списке 'grades'
+                    Binding = new Binding($"grades[{i}]"),
+                    Width = new DataGridLength(80),
+                };
+
+                // Центрируем текст оценки внутри ячейки и делаем его жирным
+                var textStyle = new Style(typeof(TextBlock));
+                textStyle.Setters.Add(new Setter(TextBlock.TextAlignmentProperty, TextAlignment.Center));
+                textStyle.Setters.Add(new Setter(TextBlock.HorizontalAlignmentProperty, HorizontalAlignment.Center));
+                textStyle.Setters.Add(new Setter(TextBlock.FontWeightProperty, FontWeights.Bold));
+                gradeColumn.ElementStyle = textStyle;
+
+                // Добавляем колонку в таблицу
+                GradeGrid.Columns.Add(gradeColumn);
+            }
+
+            // 4. Обновляем данные в таблице
+            GradeGrid.ItemsSource = students;
         }
     }
 }

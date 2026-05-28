@@ -6,7 +6,71 @@
              xmlns:local="clr-namespace:AcademyJornal.UI.Views"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
-    <Grid>
+    <StackPanel>
+        <TextBlock Text="📝  Оценки и парсинг" 
+                   Foreground="{DynamicResource AccentPurpleLightBrush}"
+                   FontSize="16" FontWeight="Bold"
+                   Margin="5,10,5,10"/>
+        
+        
+        <TextBox x:Name="GradeInputBox"
+            AcceptsReturn="True"
+            TextWrapping="Wrap"
+            VerticalScrollBarVisibility="Auto"
+            Height="150" Margin="10" 
+            Style="{DynamicResource InputBox}">
+            <TextBox.Resources>
+                <!-- 1. Стиль для круглого ползунка -->
+                <Style TargetType="Thumb">
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="Thumb">
+                                <Border CornerRadius="3" Background="{DynamicResource AccentPurpleLightBrush}" Width="6" Margin="0 5"/>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                </Style>
 
-    </Grid>
+                <!-- 2. Стиль для удаления стрелок и фона -->
+                <Style TargetType="ScrollBar">
+                    <Setter Property="Width" Value="6"/>
+                    <Setter Property="Background" Value="Transparent"/>
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="ScrollBar">
+                                <Track x:Name="PART_Track" IsDirectionReversed="True">
+                                    <Track.Thumb>
+                                        <Thumb/>
+                                    </Track.Thumb>
+                                </Track>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                </Style>
+            </TextBox.Resources>
+        </TextBox>
+
+        <Button Style="{DynamicResource PrimaryButton}" 
+                Content="Запарсить оценки" Margin="10 0 10 10"
+                Click="Parse_Click"/>
+
+        <DataGrid Margin="10" x:Name="GradeGrid"
+                  AutoGenerateColumns="False"
+                  ScrollViewer.HorizontalScrollBarVisibility="Auto"
+                  ScrollViewer.VerticalScrollBarVisibility="Auto">
+            <DataGrid.Columns>
+                <!-- Фиксированная колонка для имени -->
+                <DataGridTextColumn Header="Студент" Binding="{Binding fullName}" Width="150">
+                    <DataGridTextColumn.ElementStyle>
+                        <Style TargetType="TextBlock">
+                            <Setter Property="FontWeight" Value="SemiBold"/>
+                            <Setter Property="VerticalAlignment" Value="Center"/>
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
+
+                <!-- Сюда C#-код будет автоматически дописывать колонки: Оценка 1, Оценка 2... -->
+            </DataGrid.Columns>
+        </DataGrid>
+    </StackPanel>
 </UserControl>
