@@ -48,7 +48,7 @@
                     <ComboBox ItemsSource="{Binding Students}"
                               SelectedItem="{Binding SelectedStudent}"
                               DisplayMemberPath="FullName"
-                              Style="{DynamicResource ComboStyle}"/>
+                              />
                 </StackPanel>
 
                 <!-- Модуль -->
@@ -59,7 +59,7 @@
                     <ComboBox ItemsSource="{Binding Modules}"
                               SelectedItem="{Binding SelectedModule}"
                               DisplayMemberPath="Name"
-                              Style="{DynamicResource ComboStyle}"/>
+                              />
                 </StackPanel>
 
                 <!-- Кнопка -->

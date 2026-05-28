@@ -61,7 +61,7 @@
                             <ComboBox ItemsSource="{Binding Modules}"
                                       SelectedItem="{Binding SelectedModule}"
                                       DisplayMemberPath="Name"
-                                      Style="{DynamicResource ComboStyle}"/>
+                                      />
                         </StackPanel>
 
                         <StackPanel Grid.Column="1" Margin="0,0,12,0">
@@ -69,7 +69,7 @@
                                        Foreground="{DynamicResource TextSecondaryBrush}" Margin="0,0,0,4"/>
                             <ComboBox ItemsSource="{Binding GradeTypes}"
                                       SelectedItem="{Binding SelectedGradeType}"
-                                      Style="{DynamicResource ComboStyle}"/>
+                                      />
                         </StackPanel>
 
                         <Button Grid.Column="2"
