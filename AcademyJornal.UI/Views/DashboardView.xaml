@@ -1,14 +1,128 @@
-﻿<Page x:Class="AcademyJornal.UI.Views.DashboardView"
-      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
-      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-      xmlns:local="clr-namespace:AcademyJornal.UI.Views"
-      mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
-      Title="DashboardView">
+﻿<UserControl x:Class="AcademyJornal.UI.Views.DashboardView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:AcademyJornal.UI.Views"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <ScrollViewer VerticalScrollBarVisibility="Auto">
+        <StackPanel Margin="28,24">
 
-    <Grid>
-        
-    </Grid>
-</Page>
+            <!-- Заголовок -->
+            <TextBlock Text="Главная — Статистика"
+                       FontSize="22" FontWeight="Bold"
+                       Foreground="{DynamicResource AccentPurpleLightBrush}"
+                       Margin="0,0,0,20"/>
+
+            <!-- Фильтры -->
+            <WrapPanel Margin="0,0,0,20">
+                <StackPanel Margin="0,0,16,0">
+                    <TextBlock Text="Группа" FontSize="11"
+                               Foreground="{DynamicResource TextSecondaryBrush}" Margin="0,0,0,4"/>
+                    <ComboBox x:Name="CbGroup" Width="150"
+                              Style="{DynamicResource ComboStyle}"
+                              SelectionChanged="Filter_Changed"/>
+                </StackPanel>
+                <StackPanel>
+                    <TextBlock Text="Модуль" FontSize="11"
+                               Foreground="{DynamicResource TextSecondaryBrush}" Margin="0,0,0,4"/>
+                    <ComboBox x:Name="CbModule" Width="180"
+                              Style="{DynamicResource ComboStyle}"
+                              SelectionChanged="Filter_Changed"/>
+                </StackPanel>
+            </WrapPanel>
+
+            <!-- Stat-карточки -->
+            <UniformGrid Columns="4" Margin="0,0,0,24">
+                <Border x:Name="CardAvg" Margin="0,0,12,0"
+                        Background="{DynamicResource SurfaceBrush}"
+                        BorderBrush="{DynamicResource BorderBrush}"
+                        BorderThickness="1" CornerRadius="12" Padding="16">
+                    <StackPanel>
+                        <TextBlock Text="Средний балл" FontSize="11"
+                                   Foreground="{DynamicResource TextSecondaryBrush}"/>
+                        <TextBlock x:Name="TbAvgScore" Text="—"
+                                   FontSize="28" FontWeight="Bold"
+                                   Foreground="{DynamicResource AccentPurpleBrush}"/>
+                    </StackPanel>
+                </Border>
+                <Border Margin="0,0,12,0"
+                        Background="{DynamicResource SurfaceBrush}"
+                        BorderBrush="{DynamicResource BorderBrush}"
+                        BorderThickness="1" CornerRadius="12" Padding="16">
+                    <StackPanel>
+                        <TextBlock Text="Студентов" FontSize="11"
+                                   Foreground="{DynamicResource TextSecondaryBrush}"/>
+                        <TextBlock x:Name="TbStudentCount" Text="—"
+                                   FontSize="28" FontWeight="Bold"
+                                   Foreground="{DynamicResource AccentPinkBrush}"/>
+                    </StackPanel>
+                </Border>
+                <Border Margin="0,0,12,0"
+                        Background="{DynamicResource SurfaceBrush}"
+                        BorderBrush="{DynamicResource BorderBrush}"
+                        BorderThickness="1" CornerRadius="12" Padding="16">
+                    <StackPanel>
+                        <TextBlock Text="% выполнения ДЗ" FontSize="11"
+                                   Foreground="{DynamicResource TextSecondaryBrush}"/>
+                        <TextBlock x:Name="TbHwRate" Text="—"
+                                   FontSize="28" FontWeight="Bold"
+                                   Foreground="{DynamicResource GreenBrush}"/>
+                    </StackPanel>
+                </Border>
+                <Border Background="{DynamicResource SurfaceBrush}"
+                        BorderBrush="{DynamicResource BorderBrush}"
+                        BorderThickness="1" CornerRadius="12" Padding="16">
+                    <StackPanel>
+                        <TextBlock Text="Ниже порога (5)" FontSize="11"
+                                   Foreground="{DynamicResource TextSecondaryBrush}"/>
+                        <TextBlock x:Name="TbFailing" Text="—"
+                                   FontSize="28" FontWeight="Bold"
+                                   Foreground="{DynamicResource RedBrush}"/>
+                    </StackPanel>
+                </Border>
+            </UniformGrid>
+
+            <!-- Столбчатая диаграмма -->
+            <Border Background="{DynamicResource SurfaceBrush}"
+                    BorderBrush="{DynamicResource BorderBrush}"
+                    BorderThickness="1" CornerRadius="12" Padding="20"
+                    Margin="0,0,0,24">
+                <StackPanel>
+                    <TextBlock Text="Успеваемость студентов"
+                               FontSize="14" FontWeight="SemiBold"
+                               Foreground="{DynamicResource TextPrimaryBrush}"
+                               Margin="0,0,0,16"/>
+                    <Canvas x:Name="ChartCanvas" Height="220"
+                            ClipToBounds="True"/>
+                </StackPanel>
+            </Border>
+
+            <!-- Таблица сравнения по модулям -->
+            <Border Background="{DynamicResource SurfaceBrush}"
+                    BorderBrush="{DynamicResource BorderBrush}"
+                    BorderThickness="1" CornerRadius="12" Padding="20">
+                <StackPanel>
+                    <TextBlock Text="Сравнение по модулям"
+                               FontSize="14" FontWeight="SemiBold"
+                               Foreground="{DynamicResource TextPrimaryBrush}"
+                               Margin="0,0,0,12"/>
+                    <DataGrid x:Name="GridModules"
+                              Style="{DynamicResource DataGridStyle}"
+                              AutoGenerateColumns="False"
+                              IsReadOnly="True"
+                              CanUserAddRows="False"
+                              HeadersVisibility="Column">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="Студент"  Binding="{Binding StudentName}" Width="200"/>
+                            <DataGridTextColumn Header="Модуль"   Binding="{Binding ModuleName}"  Width="160"/>
+                            <DataGridTextColumn Header="Балл"     Binding="{Binding Score}"       Width="80"/>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                </StackPanel>
+            </Border>
+
+        </StackPanel>
+    </ScrollViewer>
+</UserControl>

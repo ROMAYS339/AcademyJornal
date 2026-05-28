@@ -3,11 +3,17 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:AcademyJornal.UI"
+        xmlns:vm="clr-namespace:AcademyJornal.UI.ViewModels"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800"  MinHeight="600" MinWidth="900"
+        Title="AcademyJornal — Журнал преподавателя"
+        Height="750" Width="1200"
+        MinHeight="600" MinWidth="900"
         WindowStartupLocation="CenterScreen"
         Background="{DynamicResource BackgroundBrush}">
+
+    <Window.DataContext>
+        <vm:NavigationViewModel/>
+    </Window.DataContext>
 
     <Grid>
         <Grid.ColumnDefinitions>
@@ -15,11 +21,13 @@
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
 
+        <!-- Боковая панель -->
         <Border Grid.Column="0"
                 Background="{DynamicResource SurfaceBrush}"
                 BorderBrush="{DynamicResource BorderBrush}"
                 BorderThickness="0,0,1,0">
             <DockPanel>
+                <!-- Логотип -->
                 <StackPanel DockPanel.Dock="Top" Margin="16,20,16,16">
                     <TextBlock Text="🎓 AcademyJornal"
                                FontSize="16" FontWeight="Bold"
@@ -30,39 +38,50 @@
                                Margin="0,2,0,0"/>
                 </StackPanel>
 
+                <!-- Кнопка темы -->
                 <Button DockPanel.Dock="Bottom"
-                        x:Name="BtnToggleTheme"
                         Content="☀️ / 🌙  Сменить тему"
                         Style="{DynamicResource SecondaryButton}"
-                        Margin="12,8" Click="BtnToggleTheme_Click"/>
+                        Margin="12,8"
+                        Click="BtnToggleTheme_Click"/>
 
+                <!-- MVVM-навигация -->
                 <StackPanel Margin="8,0">
-                    <RadioButton x:Name="NavDashboard"
-                                 Content="📊  Главная"
-                                 Style="{DynamicResource NavButton}"
-                                 GroupName="Nav" IsChecked="True"
-                                 Checked="Nav_Checked" Tag="Dashboard"/>
-                    <RadioButton x:Name="NavGrades"
-                                 Content="📝  Оценки и парсинг"
+                    <RadioButton Content="📊  Главная"
                                  Style="{DynamicResource NavButton}"
                                  GroupName="Nav"
-                                 Checked="Nav_Checked" Tag="Grades"/>
-                    <RadioButton x:Name="NavMaterials"
-                                 Content="📁  Материалы"
+                                 IsChecked="{Binding IsDashboardActive, Mode=OneWay}"
+                                 Command="{Binding NavDashboardCommand}"/>
+
+                    <RadioButton Content="📝  Оценки и парсинг"
                                  Style="{DynamicResource NavButton}"
                                  GroupName="Nav"
-                                 Checked="Nav_Checked" Tag="Materials"/>
-                    <RadioButton x:Name="NavReviews"
-                                 Content="💬  Отзывы"
+                                 IsChecked="{Binding IsGradesActive, Mode=OneWay}"
+                                 Command="{Binding NavGradesCommand}"/>
+
+                    <RadioButton Content="📁  Материалы"
                                  Style="{DynamicResource NavButton}"
                                  GroupName="Nav"
-                                 Checked="Nav_Checked" Tag="Reviews"/>
+                                 IsChecked="{Binding IsMaterialsActive, Mode=OneWay}"
+                                 Command="{Binding NavMaterialsCommand}"/>
+
+                    <RadioButton Content="💬  Отзывы"
+                                 Style="{DynamicResource NavButton}"
+                                 GroupName="Nav"
+                                 IsChecked="{Binding IsReviewsActive, Mode=OneWay}"
+                                 Command="{Binding NavReviewsCommand}"/>
+
+                    <RadioButton Content="📈  Диаграммы"
+                                 Style="{DynamicResource NavButton}"
+                                 GroupName="Nav"
+                                 IsChecked="{Binding IsChartsActive, Mode=OneWay}"
+                                 Command="{Binding NavChartsCommand}"/>
                 </StackPanel>
             </DockPanel>
         </Border>
 
-        <Frame Grid.Column="1" x:Name="MainContent"/>
-
-
+        <!-- Контентная область привязана к CurrentView -->
+        <ContentControl Grid.Column="1"
+                        Content="{Binding CurrentView}"/>
     </Grid>
 </Window>
