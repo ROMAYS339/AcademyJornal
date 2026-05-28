@@ -22,45 +22,46 @@ namespace AcademyJournal.Core.Services
         static public List<StudentGradeInput> Parse(string input)
         {
 
-            List<string> firstSplitInput = input.Split(Environment.NewLine).ToList();
+            string[] firstSplitInput = input.Split(new[] { "\r\n", "\r", "\n" }, StringSplitOptions.RemoveEmptyEntries);
             List<StudentGradeInput> output = new List<StudentGradeInput>();
 
             foreach (string line in firstSplitInput)
             {
-                List<string> splitInput = line.Split(' ').ToList();
-                List<string> gradesInput = new List<string>();
+                string trimmedLine = line.Trim();
+                if (string.IsNullOrEmpty(trimmedLine)) continue;
 
-                for (int i = 2; i < splitInput.Count; i++)
+                List<string> splitInput = trimmedLine.Split(new[] { ' ' }, StringSplitOptions.RemoveEmptyEntries).ToList();
+
+                if (splitInput.Count < 3)
                 {
-                    gradesInput.Add(splitInput[i]);
+                    throw new Exception("InvalidFormatException"); // Неверный формат строки
                 }
 
                 string name = splitInput[0] + " " + splitInput[1];
 
                 List<int> grades = new List<int>();
-                foreach (string s in gradesInput)
+                for (int i = 2; i < splitInput.Count; i++)
                 {
-                    if (int.TryParse(s, out int i))
+                    if (int.TryParse(splitInput[i], out int gradeValue))
                     {
-                        grades.Add(i);
-                        if (i > 12)
+                        // Валидация оценок из вашего исходного кода
+                        if (gradeValue > 12)
                         {
                             throw new Exception("GradeGreaterThan12");
                         }
-                        if (i <= 0)
+                        if (gradeValue <= 0)
                         {
                             throw new Exception("GradeLessOrEqual0");
                         }
+                        grades.Add(gradeValue);
                     }
                     else
                     {
                         throw new Exception("NotANumberException");
                     }
-
                 }
 
-                StudentGradeInput studentGradeInput = new StudentGradeInput(name, grades);
-                output.Add(studentGradeInput);
+                output.Add(new StudentGradeInput(name, grades));
 
             }
 
