@@ -15,7 +15,7 @@ namespace AcademyJornal.UI.Views
     /// <summary>
     /// Логика взаимодействия для GradesInputView.xaml
     /// </summary>
-    public partial class GradesInputView : Window
+    public partial class GradesInputView : UserControl
     {
         public GradesInputView()
         {
