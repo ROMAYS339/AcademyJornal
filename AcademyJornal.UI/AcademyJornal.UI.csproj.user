@@ -17,5 +17,8 @@
     <Compile Update="Views\ReviewsView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Views\TextEditorWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
 </Project>

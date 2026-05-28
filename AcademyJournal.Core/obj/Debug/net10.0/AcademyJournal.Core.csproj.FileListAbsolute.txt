@@ -58,3 +58,18 @@ G:\ITtop\Тестирование\ProjectFixedGenReview\AcademyJornal\AcademyJou
 G:\ITtop\Тестирование\ProjectFixedGenReview\AcademyJornal\AcademyJournal.Core\obj\Debug\net10.0\AcademyJournal.Core.pdb
 G:\ITtop\Тестирование\ProjectFixedGenReview\AcademyJornal\AcademyJournal.Core\obj\Debug\net10.0\AcademyJournal.Core.genruntimeconfig.cache
 G:\ITtop\Тестирование\ProjectFixedGenReview\AcademyJornal\AcademyJournal.Core\obj\Debug\net10.0\ref\AcademyJournal.Core.dll
+C:\С# ПРОЕКТЫ\AcademyJornal\AcademyJournal.Core\obj\Debug\net10.0\AcademyJournal.Core.csproj.AssemblyReference.cache
+C:\С# ПРОЕКТЫ\AcademyJornal\AcademyJournal.Core\obj\Debug\net10.0\AcademyJournal.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\С# ПРОЕКТЫ\AcademyJornal\AcademyJournal.Core\obj\Debug\net10.0\AcademyJournal.Core.AssemblyInfoInputs.cache
+C:\С# ПРОЕКТЫ\AcademyJornal\AcademyJournal.Core\obj\Debug\net10.0\AcademyJournal.Core.AssemblyInfo.cs
+C:\С# ПРОЕКТЫ\AcademyJornal\AcademyJournal.Core\obj\Debug\net10.0\AcademyJournal.Core.csproj.CoreCompileInputs.cache
+C:\С# ПРОЕКТЫ\AcademyJornal\AcademyJournal.Core\obj\Debug\net10.0\AcademyJournal.Core.sourcelink.json
+C:\С# ПРОЕКТЫ\AcademyJornal\AcademyJournal.Core\obj\Debug\net10.0\AcademyJournal.Core.dll
+C:\С# ПРОЕКТЫ\AcademyJornal\AcademyJournal.Core\obj\Debug\net10.0\refint\AcademyJournal.Core.dll
+C:\С# ПРОЕКТЫ\AcademyJornal\AcademyJournal.Core\obj\Debug\net10.0\AcademyJournal.Core.pdb
+C:\С# ПРОЕКТЫ\AcademyJornal\AcademyJournal.Core\bin\Debug\net10.0\AcademyJournal.Core.deps.json
+C:\С# ПРОЕКТЫ\AcademyJornal\AcademyJournal.Core\bin\Debug\net10.0\AcademyJournal.Core.runtimeconfig.json
+C:\С# ПРОЕКТЫ\AcademyJornal\AcademyJournal.Core\bin\Debug\net10.0\AcademyJournal.Core.dll
+C:\С# ПРОЕКТЫ\AcademyJornal\AcademyJournal.Core\bin\Debug\net10.0\AcademyJournal.Core.pdb
+C:\С# ПРОЕКТЫ\AcademyJornal\AcademyJournal.Core\obj\Debug\net10.0\AcademyJournal.Core.genruntimeconfig.cache
+C:\С# ПРОЕКТЫ\AcademyJornal\AcademyJournal.Core\obj\Debug\net10.0\ref\AcademyJournal.Core.dll

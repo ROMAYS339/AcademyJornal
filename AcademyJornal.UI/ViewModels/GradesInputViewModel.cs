@@ -6,8 +6,8 @@ using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
+using System.Linq;
 using System.Runtime.CompilerServices;
-using System.Text;
 using System.Windows.Input;
 
 namespace AcademyJornal.UI.ViewModels
@@ -18,14 +18,12 @@ namespace AcademyJornal.UI.ViewModels
         public string Grades { get; init; } = "";
         public string Average { get; init; } = "";
         public bool IsValid { get; init; } = true;
+        public List<int> GradeValues { get; init; } = new();
     }
 
-    /// <summary>ViewModel для вкладки «Оценки и парсинг»</summary>
     public class GradesInputViewModel : INotifyPropertyChanged
     {
         private readonly AppDbContext _db = new();
-
-        // ── Списки для ComboBox ────────────────────────────────────────────
         public ObservableCollection<Module> Modules { get; } = new();
         public ObservableCollection<string> GradeTypes { get; } = new()
         { "lesson — за урок", "homework — за ДЗ", "exam — за экзамен" };
@@ -34,7 +32,7 @@ namespace AcademyJornal.UI.ViewModels
         public Module? SelectedModule
         {
             get => _selectedModule;
-            set { _selectedModule = value; OnPropertyChanged(); }
+            set { _selectedModule = value; OnPropertyChanged(); CommandManager.InvalidateRequerySuggested(); }
         }
 
         private string _selectedGradeType = "lesson — за урок";
@@ -44,7 +42,6 @@ namespace AcademyJornal.UI.ViewModels
             set { _selectedGradeType = value; OnPropertyChanged(); }
         }
 
-        // ── Текстовый ввод ────────────────────────────────────────────────
         private string _rawInput = "Иван Петров 8 9 7 10\nМария Сидорова 10 11 9 12\nАлексей Козлов 5 6 4 7";
         public string RawInput
         {
@@ -52,17 +49,15 @@ namespace AcademyJornal.UI.ViewModels
             set { _rawInput = value; OnPropertyChanged(); }
         }
 
-        // ── Результаты парсинга ───────────────────────────────────────────
         public ObservableCollection<ParsedGradeRow> ParsedRows { get; } = new();
 
         private bool _hasParsed;
         public bool HasParsed
         {
             get => _hasParsed;
-            private set { _hasParsed = value; OnPropertyChanged(); }
+            private set { _hasParsed = value; OnPropertyChanged(); CommandManager.InvalidateRequerySuggested(); }
         }
 
-        // ── Статус / ошибки ────────────────────────────────────────────────
         private string _statusMessage = "";
         public string StatusMessage
         {
@@ -91,7 +86,6 @@ namespace AcademyJornal.UI.ViewModels
             private set { _saveSuccess = value; OnPropertyChanged(); }
         }
 
-        // ── Команды ───────────────────────────────────────────────────────
         public ICommand ParseCommand { get; }
         public ICommand SaveCommand { get; }
         public ICommand ClearCommand { get; }
@@ -101,7 +95,6 @@ namespace AcademyJornal.UI.ViewModels
             ParseCommand = new RelayCommand(_ => ParseInput());
             SaveCommand = new RelayCommand(_ => SaveGrades(), _ => HasParsed && SelectedModule != null);
             ClearCommand = new RelayCommand(_ => { RawInput = ""; ParsedRows.Clear(); HasParsed = false; ErrorMessage = ""; StatusMessage = ""; SaveSuccess = false; });
-
             LoadModules();
         }
 
@@ -113,24 +106,16 @@ namespace AcademyJornal.UI.ViewModels
                     Modules.Add(m);
                 SelectedModule = Modules.FirstOrDefault();
             }
-            catch
-            {
-                ErrorMessage = "Нет подключения к БД.";
-            }
+            catch { ErrorMessage = "Нет подключения к БД."; }
         }
 
         private void ParseInput()
         {
-            ErrorMessage = "";
-            SaveSuccess = false;
-            ParsedRows.Clear();
-            HasParsed = false;
+            ErrorMessage = ""; SaveSuccess = false;
+            ParsedRows.Clear(); HasParsed = false;
 
             if (string.IsNullOrWhiteSpace(RawInput))
-            {
-                ErrorMessage = "Введите данные для парсинга.";
-                return;
-            }
+            { ErrorMessage = "Введите данные для парсинга."; return; }
 
             try
             {
@@ -144,19 +129,20 @@ namespace AcademyJornal.UI.ViewModels
                         Grades = string.Join(", ", p.grades),
                         Average = $"{avg:F1}",
                         IsValid = true,
+                        GradeValues = p.grades
                     });
                 }
                 HasParsed = true;
-                StatusMessage = $"Распознано {parsed.Count} строк. Выберите модуль и тип оценки, затем нажмите «Сохранить».";
+                StatusMessage = $"Распознано {parsed.Count} строк.";
             }
             catch (Exception ex)
             {
                 ErrorMessage = ex.Message switch
                 {
-                    "GradeGreaterThan12" => "Ошибка: оценка больше 12. Допустимый диапазон: 0–12.",
-                    "GradeLessOrEqual0" => "Ошибка: оценка меньше или равна 0. Используйте 0 для обозначения пропуска.",
-                    "NotANumberException" => "Ошибка: обнаружен нечисловой символ. Формат: «Имя Фамилия оценка1 оценка2 ...»",
-                    _ => $"Ошибка парсинга: {ex.Message}"
+                    "GradeGreaterThan12" => "Ошибка: оценка больше 12.",
+                    "GradeLessOrEqual0" => "Ошибка: оценка меньше или равна 0.",
+                    "NotANumberException" => "Ошибка: нечисловое значение.",
+                    _ => $"Ошибка: {ex.Message}"
                 };
             }
         }
@@ -164,57 +150,42 @@ namespace AcademyJornal.UI.ViewModels
         private void SaveGrades()
         {
             if (SelectedModule == null) { ErrorMessage = "Выберите модуль."; return; }
+            ErrorMessage = ""; SaveSuccess = false;
 
-            ErrorMessage = "";
-            SaveSuccess = false;
-
-            // Определяем тип оценки
             var gradeType = SelectedGradeType.StartsWith("homework") ? GradeType.homework
                           : SelectedGradeType.StartsWith("exam") ? GradeType.exam
                           : GradeType.lesson;
 
             try
             {
-                var parsed = TextParserService.Parse(RawInput.Trim());
                 int saved = 0;
-
-                foreach (var row in parsed)
+                foreach (var row in ParsedRows)
                 {
-                    // Ищем студента по имени (или создаём нового)
-                    var student = _db.Student.FirstOrDefault(s => s.FullName == row.fullName);
-                    if (student == null)
-                    {
-                        student = new Student { FullName = row.fullName, Group = "Новая" };
-                        _db.Student.Add(student);
-                        _db.SaveChanges();
-                    }
+                    var student = _db.Student.FirstOrDefault(s => s.FullName == row.StudentName)
+                                  ?? new Student { FullName = row.StudentName, Group = "Новая" };
+                    if (student.Id == 0) { _db.Student.Add(student); _db.SaveChanges(); }
 
-                    foreach (var val in row.grades)
+                    foreach (var val in row.GradeValues)
                     {
                         _db.Grades.Add(new Grade
                         {
                             StudentId = student.Id,
                             ModuleId = SelectedModule.Id,
                             Value = val,
-                            Type = gradeType,
+                            Type = gradeType
                         });
                         saved++;
                     }
                 }
-
                 _db.SaveChanges();
                 SaveSuccess = true;
-                StatusMessage = $"Сохранено {saved} оценок в модуль «{SelectedModule.Name}» (тип: {gradeType}).";
+                StatusMessage = $"Сохранено {saved} оценок.";
             }
-            catch (Exception ex)
-            {
-                ErrorMessage = $"Ошибка сохранения: {ex.Message}";
-            }
+            catch (Exception ex) { ErrorMessage = $"Ошибка сохранения: {ex.Message}"; }
         }
 
         public event PropertyChangedEventHandler? PropertyChanged;
         private void OnPropertyChanged([CallerMemberName] string? n = null)
             => PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(n));
     }
-
 }
