@@ -57,6 +57,7 @@
         <DataGrid Margin="10" x:Name="GradeGrid"
                   AutoGenerateColumns="False"
                   ScrollViewer.HorizontalScrollBarVisibility="Auto"
+                  CanUserAddRows="False"
                   ScrollViewer.VerticalScrollBarVisibility="Auto">
             <DataGrid.Columns>
                 <!-- Фиксированная колонка для имени -->
